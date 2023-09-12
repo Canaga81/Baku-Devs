@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/*! Container */
+
+.container {
+    padding: 5rem 15rem;
+}
+
+/*! Header */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*? Logo */
+
+.logo a img {
+    width: 100%;
+}
+
+/*? Courses */
+
+.courses
+
+.qeydiyyat path{
+fill: red;
+}
