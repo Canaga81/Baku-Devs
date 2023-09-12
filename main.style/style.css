@@ -16,6 +16,10 @@ html {
     --white-color: #fff;
     --font-size-text: 1.6rem;
     --orange-text-color: #F5AF15;
+    --transition-button: all 0.24s ease-in;
+    --transperent-button: transperent;
+    --transition-text: all 0.126s ease-in;
+    --color-blue-dark: #57a592;
 }
 
 /*! Genaral */
@@ -61,6 +65,12 @@ header {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    transition: var(--transition-text);
+}
+.courses .courses-icon a svg path:hover,
+.courses .courses-text a:hover {
+    fill: var(--color-blue-dark);
+    color: var(--color-blue-dark);
 }
 
 /*? Head */
@@ -88,6 +98,13 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    transition: var(--transition-text);
+}
+
+.desire .desire-icon a svg path:hover,
+.desire .desire-text a:hover {
+    color: var(--text-color);
+    fill: var(--blue-color);
 }
 
 /*? Buttons */
@@ -109,6 +126,17 @@ header {
     height: 4.5rem;
     border-radius: 40px;
     border: 1px solid var(--blue-color);
+    transition: var(--transition-button);
+}
+
+.buttons-line .background-transperent:hover {
+    background-color: var(--blue-color);
+}
+
+.buttons-line .background-transperent:hover span,
+.buttons-line .background-transperent:hover svg path  {
+    color: var(--white-color);
+    fill: var(--white-color);
 }
 
 .buttons-line .background-transperent span {
@@ -130,6 +158,18 @@ header {
     height: 4.5rem;
     border-radius: 40px;
     background: var(--blue-color);
+    transition: var(--transition-button);
+}
+
+.buttons-line .background-full:hover {
+    background-color: transparent;
+    border: 1px solid var(--blue-color);
+}
+
+.buttons-line .background-full:hover span,
+.buttons-line .background-full:hover svg path {
+    color: var(--blue-color);
+    fill: var(--blue-color);
 }
 
 .qeydiyyat path {
@@ -186,6 +226,7 @@ main .main-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: var(--transition-button);
 }
 
 .main-left .crs-btn span {
@@ -195,6 +236,17 @@ main .main-container {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.main-left .crs-btn:hover {
+    background: var(--transperent-button);
+    border: 1px solid var(--blue-color);
+}
+
+.main-left .crs-btn:hover span,
+.main-left .crs-btn:hover svg path {
+    fill: var(--blue-color);
+    color: var(--blue-color);
 }
 
 /*? Right Image */
