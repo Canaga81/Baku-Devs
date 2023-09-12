@@ -46,12 +46,6 @@ header {
     align-items: center;
 }
 
-/*? Logo */
-
-.logo a img {
-    width: 100%;
-}
-
 /*? Courses */
 
 .courses {
@@ -167,6 +161,7 @@ main .main-container {
     display: flex;
     flex-direction: column;
     gap: 4.7rem;
+    width: 50%;
 }
 
 .main-left h1 {
@@ -200,4 +195,32 @@ main .main-container {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+/*? Right Image */
+.main-right{
+    width: 50%;
+    position: relative;
+}
+.main-right .main-image img {
+    width: 100%;
+}
+
+/* .main-right .main-image {
+position: absolute;
+    background: url(../images/Before-Image.png);
+    z-index: 5;
+    width: 100%;
+} */
+
+.main-right .main-image::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/Before-Image.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    left: 23%;
+    top: 6%;
 }
