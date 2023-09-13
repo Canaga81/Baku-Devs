@@ -24,6 +24,7 @@ html {
     --empty-text-color: #939393;
     --box-shadow: 2px 8px 20px 0px rgba(0, 0, 0, 0.18);
     --box-shadow-transition: 2px 8px 20px 0px rgba(0, 0, 0, 0.5);
+    --bg-knowledge-color: #E3F1F2;
 }
 
 /*! Genaral */
