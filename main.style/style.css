@@ -457,3 +457,9 @@ position: absolute;
 .container-active-end.ui a:hover {
     color: var(--text-color);
 }
+
+/*! Populyar */
+
+.populyar {
+    padding: 5rem 15rem;
+}
