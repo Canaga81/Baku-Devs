@@ -26,13 +26,14 @@ html {
 
 /*! Genaral */
 
-.general{
-   background:url(../images/Vector-bg.svg);
-   width: 100%;
-   height: 80.3rem;
-   background-size: cover;
-   background-repeat: no-repeat;
+.general {
+    background: url(../images/Vector-bg.svg);
+    width: 100%;
+    height: 80.3rem;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
 /*! Container */
 
 .container {
@@ -69,6 +70,7 @@ header {
     line-height: normal;
     transition: var(--transition-text);
 }
+
 .courses .courses-icon a svg path:hover,
 .courses .courses-text a:hover {
     fill: var(--color-blue-dark);
@@ -136,7 +138,7 @@ header {
 }
 
 .buttons-line .background-transperent:hover span,
-.buttons-line .background-transperent:hover svg path  {
+.buttons-line .background-transperent:hover svg path {
     color: var(--white-color);
     fill: var(--white-color);
 }
@@ -186,6 +188,44 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.courses-active {
+    display: none;
+}
+
+.courses-active.active {
+    display: block;
+    background-color: #ccc;
+    border-radius: 10px;
+    width: 200px;
+    height: 160px;
+    position: absolute;
+    z-index: 100;
+    left: 34.6%;
+    top: 15%;
+}
+
+.courses-active.active .courses-active-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 18px;
+}
+
+.courses-active.active .courses-active-container a {
+    color: var(--white-color);
+    font-family: Mulish;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: var(--transition-text);
+}
+
+.courses-active.active .courses-active-container a:hover {
+    color: var(--text-color);
 }
 
 /*! Main */
@@ -252,10 +292,11 @@ main .main-container {
 }
 
 /*? Right Image */
-.main-right{
+.main-right {
     width: 50%;
     position: relative;
 }
+
 .main-right .main-image img {
     width: 100%;
 }
@@ -267,7 +308,7 @@ position: absolute;
     width: 100%;
 } */
 
-.main-right .main-image::before{
+.main-right .main-image::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -352,7 +393,7 @@ position: absolute;
 
 .container-active-end {
     display: none;
-} 
+}
 
 .container-active-right.front {
     display: block;

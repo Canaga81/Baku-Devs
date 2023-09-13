@@ -1,3 +1,5 @@
+//! ---------------------- Active Card ------------------------------------------
+
 const xMarkButton = document.querySelector('.icon-mark');
 const barsButton = document.querySelector(".icon-list");
 
@@ -15,8 +17,7 @@ xMarkButton.addEventListener("click", () => {
 });
 
 
-
-//! ----------------------------------------------------
+//! ---------------------- Active A ---------------------------------------------
 
 const frontEnd = document.getElementById('frontend');
 const backEnd = document.getElementById('backend');
@@ -42,4 +43,15 @@ uIUx.addEventListener('click', () => {
     containerActiveEnd.classList.add('ui');
     containerActiveRight.classList.remove('front');
     containerActiveCent.classList.remove('back');
+});
+
+
+//! ---------------------- Active Courses ---------------------------------------
+
+const coursesBtn = document.getElementById('courses');
+const coursesActiveMain = document.querySelector('.courses-active');
+
+
+coursesBtn.addEventListener('click', () => {
+    coursesActiveMain.classList.toggle('active');
 });
