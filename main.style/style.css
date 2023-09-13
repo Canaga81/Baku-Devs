@@ -23,8 +23,12 @@ html {
     --empty-bg-color: #D9D9D9;
     --empty-text-color: #939393;
     --box-shadow: 2px 8px 20px 0px rgba(0, 0, 0, 0.18);
+    --box-shadow-small: 3px 7px 30px 0px rgba(1, 94, 100, 0.15);
     --box-shadow-transition: 2px 8px 20px 0px rgba(0, 0, 0, 0.5);
+    --box-shadow-small-transition: 3px 7px 30px 0px rgba(1, 94, 100, 0.5);
     --bg-knowledge-color: #E3F1F2;
+    --pink-bg-color: #F57170;
+    --big-bg-color: #FAFDFD;
 }
 
 /*! Genaral */
@@ -465,6 +469,7 @@ position: absolute;
 
 .populyar {
     padding: 9rem 15rem;
+    background-color: var(--big-bg-color);
 }
 
 .populyar-container {
@@ -708,4 +713,121 @@ position: absolute;
 .populyar-bottom-container .populyar-button a:hover svg path {
     fill: var(--white-color);
     color: var(--white-color);
+}
+
+/*! Knowledge */
+
+.knowledge {
+    width: 100%;
+    background-color: var(--bg-knowledge-color);
+}
+
+.knowledge-container {
+    padding: 13.8rem 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4.4rem;
+}
+
+.knowledge-top-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.knowledge-top-container h2 {
+    width: 85.5rem;
+    height: 6rem;
+    color: var(--text-color);
+    font-family: Lora;
+    font-size: 4.1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 68px;
+}
+
+.knowledge-top-container p {
+    width: 73.4rem;
+    height: 3.8rem;
+    color: var(--text-color);
+    font-family: Mulish;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.knowledge-center-container {
+    display: flex;
+    align-items: center;
+    gap: 9.8rem;
+}
+
+.knowledge-left {
+    display: flex;
+    gap: 2.6rem;
+}
+
+.knowledge-share {
+    display: flex;
+    flex-direction: column;
+    gap: 2.6rem;
+}
+
+.knowledge-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.9rem;
+    border-radius: 30px;
+    background: var(--white-color);
+    box-shadow: var(--box-shadow-small);
+    width: 29.6rem;
+    height: 28rem;
+    cursor: pointer;
+    transition: var(--transition-button);
+}
+
+.knowledge-card:hover {
+    box-shadow: var(--box-shadow-small-transition);
+}
+
+.knowledge-card .knowledge-icon {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 14px;
+    background: var(--pink-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.knowledge-card .knowledge-head h3 {
+    color: var(--text-color);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.knowledge-card .knowledge-text {
+    width: 26rem;
+    height: 6.8rem;
+}
+
+.knowledge-card .knowledge-text p {
+    color: var(--empty-text-color);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1.32rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.knowledge-share.top {
+    margin-top: 2.6rem;
 }
