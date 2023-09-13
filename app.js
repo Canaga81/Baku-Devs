@@ -95,3 +95,42 @@ coursesBtn.addEventListener('click', () => {
 // }
 
 // window.addEventListener("DOMContentLoaded", getData);
+
+
+const populyarCenterContainer = document.querySelector('.populyar-center-container');
+const populyarCenterFrontContainer = document.querySelector('.populyar-center-front-container');
+const populyarCenterBackContainer = document.querySelector('.populyar-center-back-container');
+const populyarCenterUiuxContainer = document.querySelector('.populyar-center-uiux-container');
+
+const commonBtn = document.getElementById('common-btn');
+const froBtn = document.getElementById('fro-btn');
+const backBtn = document.getElementById('back-btn');
+const uiBtn = document.getElementById('ui-btn');
+
+commonBtn.addEventListener("click", () => {
+    populyarCenterContainer.classList.add('common');
+    populyarCenterFrontContainer.classList.remove('fro');
+    populyarCenterBackContainer.classList.remove('back');
+    populyarCenterUiuxContainer.classList.remove('ui');
+});
+
+froBtn.addEventListener("click", () => {
+    populyarCenterFrontContainer.classList.add('fro');
+    populyarCenterContainer.classList.remove('common');
+    populyarCenterBackContainer.classList.remove('back');
+    populyarCenterUiuxContainer.classList.remove('ui');
+});
+
+backBtn.addEventListener("click", () => {
+    populyarCenterBackContainer.classList.add('back');
+    populyarCenterFrontContainer.classList.remove('fro');
+    populyarCenterContainer.classList.remove('common');
+    populyarCenterUiuxContainer.classList.remove('ui');
+});
+
+uiBtn.addEventListener("click", () => {
+    populyarCenterUiuxContainer.classList.add('ui');
+    populyarCenterBackContainer.classList.remove('back');
+    populyarCenterFrontContainer.classList.remove('fro');
+    populyarCenterContainer.classList.remove('common');
+});

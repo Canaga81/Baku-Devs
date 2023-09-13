@@ -527,6 +527,41 @@ position: absolute;
 /*? Center */
 
 .populyar-center-container {
+    display: none;
+}
+
+.populyar-center-front-container {
+    display: none;
+}
+
+.populyar-center-back-container {
+    display: none;
+}
+
+.populyar-center-uiux-container {
+    display: none;
+}
+
+.populyar-center-uiux-container.ui {
+    display: block;
+    display: flex;
+    gap: 2rem;
+}
+
+.populyar-center-back-container.back {
+    display: block;
+    display: flex;
+    gap: 2rem;
+}
+
+.populyar-center-front-container.fro {
+    display: block;
+    display: flex;
+    gap: 2rem;
+}
+
+.populyar-center-container.common {
+    display: block;
     display: flex;
     flex-direction: column;
     gap: 3rem;
