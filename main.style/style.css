@@ -831,3 +831,36 @@ position: absolute;
 .knowledge-share.top {
     margin-top: 2.6rem;
 }
+
+.knowledge-right .knowledge-image {
+    position: relative;
+    cursor: pointer;
+}
+
+.knowledge-right .knowledge-image .vector {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+}
+
+.knowledge-right .knowledge-image .shape {
+    position: absolute;
+    left: 10%;
+    top: 12%;
+}
+
+.knowledge-right .knowledge-image .ellipse {
+    position: absolute;
+    right: 12%;
+    top: 39%;
+}
+
+.knowledge-right .knowledge-image .ellipse-2 {
+    position: absolute;
+    left: -1%;
+    top: 61%;
+}
+
+.knowledge-right .knowledge-image .group-img {
+    width: 100%;
+}
