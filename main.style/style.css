@@ -574,8 +574,10 @@ position: absolute;
 }
 
 .populyar-line-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto;    
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 /*** Card */
@@ -863,4 +865,10 @@ position: absolute;
 
 .knowledge-right .knowledge-image .group-img {
     width: 100%;
+}
+
+/*! Footer */
+
+footer {
+    
 }
