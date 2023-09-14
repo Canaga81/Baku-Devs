@@ -870,5 +870,71 @@ position: absolute;
 /*! Footer */
 
 footer {
-    
+    width: 100%;
+    opacity: 0.6;
+    background: url(<path-to-image>), lightgray 0px -398px / 100% 193.645% no-repeat;
+background-color:var(--blue-color);
+}
+
+.footer-container {
+    padding: 0 15rem;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 11.5rem;
+}
+
+.footer-top-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2.815rem;
+}
+
+.footer-section-1 .lorem-text {
+    width: 26rem;
+    height: 6.8rem;
+}
+
+.footer-section-1 .lorem-text p {
+    color: var(--white-color);
+    font-family: Mulish;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.footer-section-2 .footer-ul-items {
+    display: flex;
+    gap: 8.2rem;
+}
+
+.footer-section-2 .footer-ul-items .footer-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.footer-section-2 .footer-ul-items .footer-ul li {
+    color: var(--white-color);
+    font-family: Mulish;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer-section-2 .footer-ul-items .footer-ul li a {
+    color: var(--white-color);
+    font-family: Mulish;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
