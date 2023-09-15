@@ -38,7 +38,7 @@ html {
 .general {
     background: url(../images/Vector-bg.svg);
     width: 100%;
-    height: 80.3rem;
+    /* height: 80.3rem; */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -380,7 +380,8 @@ header {
 /*! Background */
 
 .background {
-    background-color: blue;
+    background-color: var(--blue-color);
+    opacity: 0.8;
 }
 
 .background-container {
@@ -416,6 +417,11 @@ header {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    transition: var(--transition-text);
+}
+
+.background-container .bg-bottom a:hover {
+    color: var(--text-color);
 }
 
 .background-container .bg-bottom .circle-bg {
@@ -423,4 +429,396 @@ header {
     height: 5px;
     background-color: var(--white-color);
     border-radius: 50%;
+}
+
+/*! Populyar */
+
+.populyar {
+    padding: 9rem 15rem;
+    background-color: var(--big-bg-color);
+}
+
+.populyar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6.5rem;
+}
+
+/*** Top */
+
+.populyar-top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.populyar-top-left h2 {
+    color: var(--text-color);
+    font-family: Lora;
+    font-size: 4.1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 68px;
+}
+
+.populyar-top-right-buttons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.populyar-top-right-buttons .populyar-button {
+    width: 13.6rem;
+    height: 4.5rem;
+    border-radius: 8px;
+    border: 1px solid #008D96;
+    background: transparent;
+    cursor: pointer;
+    transition: var(--transition-button);
+}
+
+.populyar-top-right-buttons .populyar-button a {
+    color: var(--blue-color);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: var(--transition-button);
+}
+
+.populyar-top-right-buttons .populyar-button:hover {
+    background-color: var(--blue-color);
+}
+
+.populyar-top-right-buttons .populyar-button:hover a {
+    color: var(--white-color);
+}
+
+/*? Center */
+
+.populyar-center-container {
+    display: none;
+}
+
+.populyar-center-front-container {
+    display: none;
+}
+
+.populyar-center-back-container {
+    display: none;
+}
+
+.populyar-center-uiux-container {
+    display: none;
+}
+
+.populyar-center-uiux-container.ui {
+    display: block;
+    display: flex;
+    gap: 2rem;
+}
+
+.populyar-center-back-container.back {
+    display: grid;
+    grid-template-columns: auto auto auto auto;    
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.populyar-center-front-container.fro {
+    display: block;
+    display: flex;
+    gap: 2rem;
+}
+
+.populyar-center-container.common {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.populyar-line-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;    
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/*** Card */
+
+.populyar-card {
+    width: 27rem;
+    height: 34.7rem;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 3.2rem;
+    cursor: pointer;
+    transition: var(--transition-button);
+}
+
+.populyar-card:hover {
+    box-shadow: var(--box-shadow-transition);
+}
+
+.populyar-video-text {
+    display: flex;
+    align-items: center;
+    gap: 6.7rem;
+}
+
+.populyar-video-left .populyar-btn {
+    color: var(--text-color);
+    text-align: center;
+    font-family: Mulish;
+    font-size: var(--font-size-text);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 0.6rem 1.1rem;
+    border-radius: 8px;
+    opacity: 0.2;
+    background: #F5AF15;
+}
+
+.populyar-video-right {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.populyar-video-right .num {
+    color: var(--empty-text-color);
+    text-align: center;
+    font-family: Mulish;
+    font-size: var(--font-size-text);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/*? Line */
+
+.populyar-line {
+    /* width: 23.7rem; */
+    width: 84%;
+    height: 1px;
+    background-color: var(--empty-bg-color);
+}
+
+.populyar-text-icon {
+    display: flex;
+    align-items: center;
+    gap: 1.9rem;
+}
+
+.populyar-text-icon .populyar-paragraph {
+    width: 16.9rem;
+    height: 6rem;
+}
+
+.populyar-text-icon .populyar-paragraph p {
+    color: var(--text-color);
+    font-family: Mulish;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.populyar-text-icon .populyar-radius {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--blue-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*! Footer */
+
+footer {
+    width: 100%;
+    opacity: 0.6;
+    background: url(<path-to-image>), lightgray 0px -398px / 100% 193.645% no-repeat;
+background-color:var(--blue-color);
+}
+
+.footer-container {
+    padding: 0 15rem;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 11.5rem;
+}
+
+.footer-top-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2.815rem;
+}
+
+.footer-section-1 .lorem-text {
+    width: 26rem;
+    height: 6.8rem;
+}
+
+.footer-section-1 .lorem-text p {
+    color: var(--white-color);
+    font-family: Mulish;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.footer-section-2 .footer-ul-items {
+    display: flex;
+    gap: 8.2rem;
+}
+
+.footer-section-2 .footer-ul-items .footer-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.footer-section-2 .footer-ul-items .footer-ul li {
+    color: var(--white-color);
+    font-family: Mulish;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer-section-2 .footer-ul-items .footer-ul li a {
+    color: var(--white-color);
+    font-family: Mulish;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: var(--transition-text);
+}
+
+.footer-section-2 .footer-ul-items .footer-ul li a:hover {
+    color: var(--text-color);
+}
+
+.footer-section-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 4.3rem;
+}
+
+.footer-section-3 .footer-text-p p {
+    color: var(--white-color);
+    font-family: Mulish;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-section-3 .footer-text-p p span {
+    color: var(--white-color);
+    font-family: Mulish;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.footer-input {
+    display: flex;
+    width: 39rem;
+    height: 6rem;
+    border-radius: 60px;
+    border: 1px solid rgba(0, 141, 150, 0.50);
+    background: #FFF;
+}
+
+.footer-input input {
+    width: 100%;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border: 1px solid rgba(0, 141, 150, 0.50);
+    padding-left: 3rem;
+    outline: none;
+    background-color: transparent;
+}
+
+.footer-input input::placeholder {
+    color: var(--input-placeholder-color);
+    font-family: Mulish;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer-input .input-btn {
+    width: 10rem;
+    height: 6rem;
+    border-radius: 60px;
+    background: var(--orange-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-button);
+}
+
+.footer-input .input-btn:hover {
+    background-color: var(--transition-input-bg-color);
+}
+
+.footer-bottom-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.1rem;
+}
+
+.footer-line-x {
+    width: 100%;
+    height: 1px;
+    background-color: var(--footer-line-bg-color);
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-content .footer-history {
+    color: var(--white-color);
+    font-family: Mulish;
+    font-size: var(--font-size-text);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.footer-content .footer-jedai {
+    color: var(--white-color);
+    font-family: Mulish;
+    font-size: var(--font-size-text);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
 }
