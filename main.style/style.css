@@ -878,7 +878,7 @@ footer {
     width: 100%;
     opacity: 0.6;
     background: url(<path-to-image>), lightgray 0px -398px / 100% 193.645% no-repeat;
-background-color:var(--blue-color);
+    background-color:var(--blue-color);
 }
 
 .footer-container {

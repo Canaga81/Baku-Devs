@@ -60,12 +60,28 @@ coursesBtn.addEventListener('click', () => {
 //!------------------------ API -------------------------------------------------
 
 const populyarLineContainer = document.querySelector('.populyar-line-container');
+let courses;
 
-const PostUI = (posts) => {
+const PostUI = (filtered) => {
+    let filteredCources;
 
-    // let result = '';
+    switch (filtered) {
+        case "Frontend":
+            filteredCources = courses.filter((post) => post.courseType === filtered)
+            break;
+        case "Backend":
+            filteredCources = courses.filter((post) => post.courseType === filtered)
+            break;
+        case "UI/UX":
+            filteredCources = courses.filter((post) => post.courseType === filtered)
+        default:
+            filteredCources = courses
+            break;
+    }
 
-    posts.forEach((post) => {
+    populyarLineContainer.innerHTML = ""
+
+    filteredCources.forEach((post) => {
 
         populyarLineContainer.innerHTML += `
         <div class="populyar-card">
@@ -130,12 +146,14 @@ const PostUI = (posts) => {
 }
 
 const getData = async () => {
+    const {pathname} = location
+    const limit = pathname === "/index.html" ? "?_limit=8" : ""
 
-    const res = await fetch('http://localhost:3000/courses');
+    const res = await fetch(`http://localhost:3000/courses${limit}`);
     const data = await res.json();
 
-    PostUI(data);
-
+    courses = data;
+    PostUI();
 }
 
 window.addEventListener("DOMContentLoaded", getData);
@@ -151,30 +169,39 @@ const froBtn = document.getElementById('fro-btn');
 const backBtn = document.getElementById('back-btn');
 const uiBtn = document.getElementById('ui-btn');
 
-commonBtn.addEventListener("click", () => {
-    populyarCenterContainer.classList.add('common');
-    populyarCenterFrontContainer.classList.remove('fro');
-    populyarCenterBackContainer.classList.remove('back');
-    populyarCenterUiuxContainer.classList.remove('ui');
-});
-
 froBtn.addEventListener("click", () => {
-    populyarCenterFrontContainer.classList.add('fro');
-    populyarCenterContainer.classList.remove('common');
-    populyarCenterBackContainer.classList.remove('back');
-    populyarCenterUiuxContainer.classList.remove('ui');
-});
+    PostUI("Frontend")
+})
 
 backBtn.addEventListener("click", () => {
-    populyarCenterBackContainer.classList.add('back');
-    populyarCenterFrontContainer.classList.remove('fro');
-    populyarCenterContainer.classList.remove('common');
-    populyarCenterUiuxContainer.classList.remove('ui');
-});
+    PostUI("Backend")
+})
 
-uiBtn.addEventListener("click", () => {
-    populyarCenterUiuxContainer.classList.add('ui');
-    populyarCenterBackContainer.classList.remove('back');
-    populyarCenterFrontContainer.classList.remove('fro');
-    populyarCenterContainer.classList.remove('common');
-});
+
+// commonBtn.addEventListener("click", () => {
+//     populyarCenterContainer.classList.add('common');
+//     populyarCenterFrontContainer.classList.remove('fro');
+//     populyarCenterBackContainer.classList.remove('back');
+//     populyarCenterUiuxContainer.classList.remove('ui');
+// });
+
+// froBtn.addEventListener("click", () => {
+//     populyarCenterFrontContainer.classList.add('fro');
+//     populyarCenterContainer.classList.remove('common');
+//     populyarCenterBackContainer.classList.remove('back');
+//     populyarCenterUiuxContainer.classList.remove('ui');
+// });
+
+// backBtn.addEventListener("click", () => {
+//     populyarCenterBackContainer.classList.add('back');
+//     populyarCenterFrontContainer.classList.remove('fro');
+//     populyarCenterContainer.classList.remove('common');
+//     populyarCenterUiuxContainer.classList.remove('ui');
+// });
+
+// uiBtn.addEventListener("click", () => {
+//     populyarCenterUiuxContainer.classList.add('ui');
+//     populyarCenterBackContainer.classList.remove('back');
+//     populyarCenterFrontContainer.classList.remove('fro');
+//     populyarCenterContainer.classList.remove('common');
+// });
