@@ -707,7 +707,8 @@ header {
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 133.333% */
+    line-height: 24px;
+    /* 133.333% */
 }
 
 .android-line-5 .android-line-item .android-bg-aqua {
@@ -821,7 +822,8 @@ header {
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 30px; /* 166.667% */
+    line-height: 30px;
+    /* 166.667% */
 }
 
 .android-line-6 .android-head .android-backgroud-line .android-item-head .begin .android-text {
@@ -936,7 +938,8 @@ header {
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 22px; /* 157.143% */
+    line-height: 22px;
+    /* 157.143% */
 }
 
 .android-line-6 .android-item-container .begin .android-text-button .android-button {
@@ -967,7 +970,7 @@ header {
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;   
+    line-height: normal;
 }
 
 /*** Right */
@@ -976,6 +979,83 @@ header {
     display: flex;
     flex-direction: column;
     gap: 3.5rem;
+}
+
+.android-right-container .android-right-top h3 {
+    color: var(--text-color);
+    font-family: Mulish;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.android-right-container .android-right-center {
+    width: 36rem;
+    height: 77.7rem;
+    border-radius: 8px;
+    border: 1px solid #DFDBDB;
+    opacity: 0.8;
+    background: var(--white-color);
+}
+
+.inputcenter {
+    display: flex;
+    gap: 1.6rem;
+    padding-top: 1.9rem;
+    padding-left: 1.9rem;
+    background-color: var(--white-color);
+    border-radius: 8px 8px 0px 0px;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: var(--transition-button);
+}
+
+.inputcenter:hover {
+    background-color: #E3F1F2;
+}
+
+.inputcenter input {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.inputcenter .content-rigth {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 36rem;
+    height: 11.1rem;
+}
+
+.inputcenter .content-rigth .content-right-top {
+    width: 29.1rem;
+    height: 4.9rem;
+}
+
+.inputcenter .content-rigth .content-right-top p {
+    color: var(--text-color);
+    font-family: Mulish;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 133.333% */
+}
+
+.inputcenter .content-rigth .content-right-bottom {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.inputcenter .content-rigth .content-right-bottom a {
+    color: var(--empty-text-color);
+    font-family: Mulish;
+    font-size: var(--font-size-text);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 /*! Footer */
