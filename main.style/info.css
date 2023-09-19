@@ -434,7 +434,77 @@ header {
     border-radius: 50%;
 }
 
+/*! About */
 
+.about {
+    padding: 11.5rem 15rem;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*** Left */
+
+.about-left .about-image {
+    width: 45.7rem;
+    height: 34.8rem;
+    border-radius: 20px;
+    border: 1px solid var(--blue-color);
+    position: relative;
+}
+
+.about-left .about-image .big-image {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+}
+
+.about-left .about-image .small-image {
+    position: absolute;
+    z-index: 15;
+    top: -45px;
+    left: -45px;
+}
+
+.about-left .about-image .little-image {
+    position: absolute;
+    z-index: 10;
+    right: 15px;
+    bottom: -45px;
+}
+
+/*** Right */
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.about-right .about-head h1 {
+    color: var(--text-color);
+    font-family: Lora;
+    font-size: 4.1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.about-right .about-bottom {
+    width: 55.3rem;
+    height: 28.2rem;
+}
+
+.about-right .about-bottom p {
+    color: var(--empty-text-color);
+    font-family: Mulish;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
 
 /*! Knowledge */
 
