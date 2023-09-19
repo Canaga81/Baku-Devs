@@ -33,6 +33,7 @@ html {
     --footer-line-bg-color: #E5E5E5;
     --transition-input-bg-color: #f4d006;
 }
+
 /*! Genaral */
 
 .general {
@@ -433,6 +434,98 @@ header {
 
 /*! Android */
 
+.android {
+    padding: 4rem 15rem;
+}
+
+.android-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.android-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.android-header a {
+    color: var(--empty-text-color);
+    font-family: Mulish;
+    font-size: var(--font-size-text);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.android-header .and-circle {
+    width: 6px;
+    height: 6px;
+    background-color: var(--input-placeholder-color);
+    border-radius: 50%;
+}
+
+.android-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.android-left-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/*? Line-1 */
+
+.android-line-1 {
+    display: flex;
+    align-items: center;
+    gap: 7.2rem;
+}
+
+.android-line-1 .and-back-bg {
+    border-radius: 8px;
+    opacity: 0.2;
+    background: var(--orange-text-color);
+}
+
+.android-line-1 .and-back-bg a {
+    color: var(--text-color);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 0.8rem;
+}
+
+.android-line-1 .and-icon-num {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.android-line-1 .and-icon-num .num {
+    color: var(--empty-text-color);
+    text-align: center;
+    font-family: Mulish;
+    font-size: var(--font-size-text);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/*? Line-Empty */
+
+.android-empty-line {
+    height: 1px;
+    max-width: 68.2rem;
+    background-color: var(--footer-line-bg-color);
+}
+
 
 
 /*! Footer */
@@ -441,7 +534,7 @@ footer {
     width: 100%;
     opacity: 0.6;
     background: url(<path-to-image>), lightgray 0px -398px / 100% 193.645% no-repeat;
-background-color:var(--blue-color);
+    background-color: var(--blue-color);
 }
 
 .footer-container {
