@@ -457,6 +457,11 @@ header {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    transition: var(--transition-text);
+}
+
+.android-header a:hover {
+    color: var(--text-color);
 }
 
 .android-header .and-circle {
@@ -525,6 +530,53 @@ header {
     max-width: 68.2rem;
     background-color: var(--footer-line-bg-color);
 }
+
+/*? Line-2 */
+
+.android-line-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3.3rem;
+}
+
+.android-line-2 .android-top-line {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.android-line-2 .android-top-line .android-left .android-image img {
+    width: 100%;
+}
+
+.android-line-2 .android-top-line .android-right {
+    width: 40.8rem;
+    height: 9.3rem;
+}
+
+.android-line-2 .android-top-line .android-right h2 {
+    color: var(--text-color);
+    font-family: Mulish;
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.android-line-2 .android-bottom-line .android-text {
+    width: 68.2rem;
+    height: 6.6rem;
+}
+
+.android-line-2 .android-bottom-line .android-text p {
+    color: var(--empty-text-color);
+    font-family: Mulish;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 166.667% */
+}
+
+/*? Line-3 */
 
 
 
