@@ -739,6 +739,20 @@ header {
     padding-top: 1.8rem;
 }
 
+.android-line-5 .android-line-item .android-text-paragraph {
+    width: 68.3rem;
+    height: 7.2rem;
+}
+
+.android-line-5 .android-line-item .android-text-paragraph p {
+    color: var(--empty-text-color);
+    font-family: Mulish;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
 /*? Line-Empty */
 
 .line-empty-bg {
@@ -853,6 +867,115 @@ header {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+.android-line-6 .android-head .android-backgroud-line .android-item-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.android-line-6 .android-head .android-backgroud-line .android-item-body .android-name h3 {
+    color: var(--text-color);
+    font-family: Mulish;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.android-line-6 .android-head .android-backgroud-line .android-item-body .android-bg-pink {
+    width: 52.3rem;
+    height: 20.2rem;
+    border-radius: 8px;
+    border: 1px solid #ECE2CB;
+    background: #F9F6EF;
+    padding-top: 2.5rem;
+    padding-left: 2.1rem;
+}
+
+.android-line-6 .android-head .android-backgroud-line .android-item-body .android-bg-pink p {
+    color: var(--text-color);
+    font-family: Mulish;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.android-line-6 .android-item-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.android-line-6 .android-item-container .begin {
+    width: 57.9rem;
+    height: 18.5rem;
+    padding-top: 1.8rem;
+    padding-left: 2.7rem;
+    border-radius: 8px;
+    border: 1px solid #ECE2CB;
+    background: #FBFBFB;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.android-line-6 .android-item-container .begin .android-text-button {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.android-line-6 .android-item-container .begin .android-text-button p {
+    width: 52.3rem;
+    height: 4.9rem;
+    color: var(--text-color);
+    font-family: Mulish;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 157.143% */
+}
+
+.android-line-6 .android-item-container .begin .android-text-button .android-button {
+    width: 11.5rem;
+    height: 3.2rem;
+    border-radius: 70px;
+    border: 1px solid var(--chocolate-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition-button);
+}
+
+.android-line-6 .android-item-container .begin .android-text-button .android-button:hover {
+    background-color: var(--chocolate-color);
+}
+
+.android-line-6 .android-item-container .begin .android-text-button .android-button:hover a,
+.android-line-6 .android-item-container .begin .android-text-button .android-button:hover svg path {
+    color: var(--white-color);
+    fill: var(--white-color);
+}
+
+.android-line-6 .android-item-container .begin .android-text-button .android-button a {
+    color: var(--chocolate-color);
+    font-family: Mulish;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;   
+}
+
+/*** Right */
+
+.android-right-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
 }
 
 /*! Footer */
