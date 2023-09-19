@@ -66,6 +66,10 @@ const PostUI = ( filtered ) => {
     let filteredCources;
 
     switch ( filtered ) {
+        case "Hamisi":
+            filteredCources = courses.filter( ( post ) => post.courseAll === filtered );
+            console.log( filteredCources );
+            break;
         case "Frontend":
             filteredCources = courses.filter( ( post ) => post.courseType === filtered );
             break;
@@ -169,12 +173,13 @@ const froBtn = document.getElementById( 'fro-btn' );
 const backBtn = document.getElementById( 'back-btn' );
 const uiBtn = document.getElementById( 'ui-btn' );
 
-froBtn.addEventListener( "click", () => {
-    PostUI( "Frontend" );
-} );
 
-backBtn.addEventListener( "click", () => {
-    PostUI( "Backend" );
+
+const btnnn = document.querySelectorAll( '.btnnn' );
+btnnn.forEach( btn => {
+    btn.addEventListener( 'click', ( e ) => {
+        PostUI( e.target.innerText );
+    } );
 } );
 
 

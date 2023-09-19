@@ -1,0 +1,615 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --text-color: #1B2221;
+    --blue-color: #008D96;
+    --white-color: #fff;
+    --font-size-text: 1.6rem;
+    --orange-text-color: #F5AF15;
+    --transition-button: all 0.24s ease-in;
+    --transperent-button: transperent;
+    --transition-text: all 0.126s ease-in;
+    --color-blue-dark: #57a592;
+    --empty-bg-color: #D9D9D9;
+    --empty-text-color: #939393;
+    --box-shadow: 2px 8px 20px 0px rgba(0, 0, 0, 0.18);
+    --box-shadow-small: 3px 7px 30px 0px rgba(1, 94, 100, 0.15);
+    --box-shadow-transition: 2px 8px 20px 0px rgba(0, 0, 0, 0.5);
+    --box-shadow-small-transition: 3px 7px 30px 0px rgba(1, 94, 100, 0.5);
+    --bg-knowledge-color: #E3F1F2;
+    --pink-bg-color: #F57170;
+    --big-bg-color: #FAFDFD;
+    --input-placeholder-color: #C4C4C4;
+    --footer-line-bg-color: #E5E5E5;
+    --transition-input-bg-color: #f4d006;
+    --line-border-color: #CAE6E8;
+    --line-bg-color: #ECF8F9;
+    --chocolate-color: #BE870D;
+}
+
+/*! Genaral */
+
+.general {
+    background: url(../images/Vector-bg.svg);
+    width: 100%;
+    /* height: 80.3rem; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*! Container */
+
+.container {
+    padding: 3.5rem 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 10rem; */
+}
+
+/*! Header */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*? Courses */
+
+.courses {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.courses-text a {
+    color: var(--text-color);
+    font-family: Mulish;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: var(--transition-text);
+}
+
+.courses .courses-icon a svg path:hover,
+.courses .courses-text a:hover {
+    fill: var(--color-blue-dark);
+    color: var(--color-blue-dark);
+}
+
+/*? Head */
+
+.head-content {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 7rem;
+}
+
+/*? Desire */
+
+.desire {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.desire .desire-text a {
+    color: var(--blue-color);
+    text-align: center;
+    font-family: Mulish;
+    font-size: var(--font-size-text);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: var(--transition-text);
+}
+
+.desire .desire-icon a svg path:hover,
+.desire .desire-text a:hover {
+    color: var(--text-color);
+    fill: var(--blue-color);
+}
+
+/*? Buttons */
+
+.buttons-line {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+}
+
+/*** Button Transperent */
+
+.buttons-line .background-transperent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    width: 12.8rem;
+    height: 4.5rem;
+    border-radius: 40px;
+    border: 1px solid var(--blue-color);
+    transition: var(--transition-button);
+}
+
+.buttons-line .background-transperent:hover {
+    background-color: var(--blue-color);
+}
+
+.buttons-line .background-transperent:hover span,
+.buttons-line .background-transperent:hover svg path {
+    color: var(--white-color);
+    fill: var(--white-color);
+}
+
+.buttons-line .background-transperent span {
+    color: var(--blue-color);
+    text-align: center;
+    font-family: Mulish;
+    font-size: var(--font-size-text);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.buttons-line .background-full {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 20.6rem;
+    height: 4.5rem;
+    border-radius: 40px;
+    background: var(--blue-color);
+    transition: var(--transition-button);
+}
+
+.buttons-line .background-full:hover {
+    background-color: transparent;
+    border: 1px solid var(--blue-color);
+}
+
+.buttons-line .background-full:hover span,
+.buttons-line .background-full:hover svg path {
+    color: var(--blue-color);
+    fill: var(--blue-color);
+}
+
+.qeydiyyat path {
+    fill: var(--white-color);
+}
+
+.buttons-line .background-full span {
+    color: var(--white-color);
+    text-align: center;
+    font-family: Mulish;
+    font-size: var(--font-size-text);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.courses-active {
+    display: none;
+}
+
+.courses-active.active {
+    display: block;
+    background-color: #ccc;
+    border-radius: 10px;
+    width: 200px;
+    height: 160px;
+    position: absolute;
+    z-index: 100;
+    left: 34.6%;
+    top: 15%;
+}
+
+.courses-active.active .courses-active-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 18px;
+}
+
+.courses-active.active .courses-active-container a {
+    color: var(--white-color);
+    font-family: Mulish;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: var(--transition-text);
+}
+
+.courses-active.active .courses-active-container a:hover {
+    color: var(--text-color);
+}
+
+/*! Container-Active */
+
+.container-active {
+    width: 100%;
+    height: 80.3rem;
+    background: url(<path-to-image>), lightgray 0px -20px / 100% 102.491% no-repeat;
+    mix-blend-mode: multiply;
+    position: relative;
+    display: none;
+    transition: all 0.36s ease-in;
+}
+
+.container-active-common {
+    display: flex;
+    flex-direction: column;
+    gap: 9rem;
+}
+
+.container-active-icon .icon-mark .fa-xmark {
+    position: absolute;
+    left: 48.5rem;
+    top: 4.4rem;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    transition: var(--transition-text);
+}
+
+.container-active-icon .icon-mark .fa-xmark:hover {
+    color: var(--blue-color);
+}
+
+.container-active-center {
+    display: flex;
+    align-items: center;
+    gap: 16rem;
+    padding-left: 14.6rem;
+}
+
+.container-active-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.container-active-left a {
+    font-family: Mulish;
+    font-size: 5.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--text-color);
+    transition: var(--transition-text);
+}
+
+.container-active-left a:hover {
+    color: var(--color-blue-dark);
+}
+
+.container-active-line {
+    width: 1px;
+    height: 28.8rem;
+    background: var(--empty-bg-color);
+}
+
+.container-active-right {
+    display: none;
+}
+
+.container-active-cent {
+    display: none;
+}
+
+.container-active-end {
+    display: none;
+}
+
+.container-active-right.front {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.container-active-cent.back {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.container-active-end.ui {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.container-active-right a {
+    color: var(--empty-text-color);
+    font-family: Mulish;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: var(--transition-text);
+}
+
+.container-active-right a:hover {
+    color: var(--text-color);
+}
+
+.container-active-cent a {
+    color: var(--empty-text-color);
+    font-family: Mulish;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: var(--transition-text);
+}
+
+.container-active-cent a:hover {
+    color: var(--text-color);
+}
+
+.container-active-end.ui a {
+    color: var(--empty-text-color);
+    font-family: Mulish;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: var(--transition-text);
+}
+
+.container-active-end.ui a:hover {
+    color: var(--text-color);
+}
+
+/*! Background */
+
+.background {
+    background-color: var(--blue-color);
+    opacity: 0.8;
+}
+
+.background-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.1rem;
+    width: 100%;
+    height: 15rem;
+}
+
+.background-container .bg-head h2 {
+    color: var(--white-color);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.background-container .bg-bottom {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.background-container .bg-bottom a {
+    color: var(--white-color);
+    font-family: Mulish;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: var(--transition-text);
+}
+
+.background-container .bg-bottom a:hover {
+    color: var(--text-color);
+}
+
+.background-container .bg-bottom .circle-bg {
+    width: 5px;
+    height: 5px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+}
+
+/*! Footer */
+
+footer {
+    width: 100%;
+    opacity: 0.6;
+    background: url(<path-to-image>), lightgray 0px -398px / 100% 193.645% no-repeat;
+    background-color: var(--blue-color);
+}
+
+.footer-container {
+    padding: 0 15rem;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 11.5rem;
+}
+
+.footer-top-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2.815rem;
+}
+
+.footer-section-1 .lorem-text {
+    width: 26rem;
+    height: 6.8rem;
+}
+
+.footer-section-1 .lorem-text p {
+    color: var(--white-color);
+    font-family: Mulish;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.footer-section-2 .footer-ul-items {
+    display: flex;
+    gap: 8.2rem;
+}
+
+.footer-section-2 .footer-ul-items .footer-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.footer-section-2 .footer-ul-items .footer-ul li {
+    color: var(--white-color);
+    font-family: Mulish;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer-section-2 .footer-ul-items .footer-ul li a {
+    color: var(--white-color);
+    font-family: Mulish;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: var(--transition-text);
+}
+
+.footer-section-2 .footer-ul-items .footer-ul li a:hover {
+    color: var(--text-color);
+}
+
+.footer-section-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 4.3rem;
+}
+
+.footer-section-3 .footer-text-p p {
+    color: var(--white-color);
+    font-family: Mulish;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-section-3 .footer-text-p p span {
+    color: var(--white-color);
+    font-family: Mulish;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.footer-input {
+    display: flex;
+    width: 39rem;
+    height: 6rem;
+    border-radius: 60px;
+    border: 1px solid rgba(0, 141, 150, 0.50);
+    background: #FFF;
+}
+
+.footer-input input {
+    width: 100%;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border: 1px solid rgba(0, 141, 150, 0.50);
+    padding-left: 3rem;
+    outline: none;
+    background-color: transparent;
+}
+
+.footer-input input::placeholder {
+    color: var(--input-placeholder-color);
+    font-family: Mulish;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer-input .input-btn {
+    width: 10rem;
+    height: 6rem;
+    border-radius: 60px;
+    background: var(--orange-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-button);
+}
+
+.footer-input .input-btn:hover {
+    background-color: var(--transition-input-bg-color);
+}
+
+.footer-bottom-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.1rem;
+}
+
+.footer-line-x {
+    width: 100%;
+    height: 1px;
+    background-color: var(--footer-line-bg-color);
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-content .footer-history {
+    color: var(--white-color);
+    font-family: Mulish;
+    font-size: var(--font-size-text);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.footer-content .footer-jedai {
+    color: var(--white-color);
+    font-family: Mulish;
+    font-size: var(--font-size-text);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
