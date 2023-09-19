@@ -1,93 +1,93 @@
 //! ---------------------- Active Card ------------------------------------------
 
-const xMarkButton = document.querySelector('.icon-mark');
-const barsButton = document.querySelector(".icon-list");
+const xMarkButton = document.querySelector( '.icon-mark' );
+const barsButton = document.querySelector( ".icon-list" );
 
-const picture = document.querySelector(".container");
-const pictureActive = document.querySelector(".container-active");
+const picture = document.querySelector( ".container" );
+const pictureActive = document.querySelector( ".container-active" );
 
-barsButton.addEventListener("click", () => {
+barsButton.addEventListener( "click", () => {
     pictureActive.style.display = "block";
     picture.style.display = "none";
-})
+} );
 
-xMarkButton.addEventListener("click", () => {
+xMarkButton.addEventListener( "click", () => {
     pictureActive.style.display = "none";
     picture.style.display = "block";
-});
+} );
 
 
 //! ---------------------- Active A ---------------------------------------------
 
-const frontEnd = document.getElementById('frontend');
-const backEnd = document.getElementById('backend');
-const uIUx = document.getElementById('uiux');
+const frontEnd = document.getElementById( 'frontend' );
+const backEnd = document.getElementById( 'backend' );
+const uIUx = document.getElementById( 'uiux' );
 
-const containerActiveRight = document.querySelector('.container-active-right');
-const containerActiveCent = document.querySelector('.container-active-cent');
-const containerActiveEnd = document.querySelector('.container-active-end');
+const containerActiveRight = document.querySelector( '.container-active-right' );
+const containerActiveCent = document.querySelector( '.container-active-cent' );
+const containerActiveEnd = document.querySelector( '.container-active-end' );
 
-frontEnd.addEventListener('click', () => {
-    containerActiveRight.classList.add('front');
-    containerActiveCent.classList.remove('back');
-    containerActiveEnd.classList.remove('ui');
-});
+frontEnd.addEventListener( 'click', () => {
+    containerActiveRight.classList.add( 'front' );
+    containerActiveCent.classList.remove( 'back' );
+    containerActiveEnd.classList.remove( 'ui' );
+} );
 
-backEnd.addEventListener('click', () => {
-    containerActiveCent.classList.add('back');
-    containerActiveRight.classList.remove('front');
-    containerActiveEnd.classList.remove('ui');
-});
+backEnd.addEventListener( 'click', () => {
+    containerActiveCent.classList.add( 'back' );
+    containerActiveRight.classList.remove( 'front' );
+    containerActiveEnd.classList.remove( 'ui' );
+} );
 
-uIUx.addEventListener('click', () => {
-    containerActiveEnd.classList.add('ui');
-    containerActiveRight.classList.remove('front');
-    containerActiveCent.classList.remove('back');
-});
+uIUx.addEventListener( 'click', () => {
+    containerActiveEnd.classList.add( 'ui' );
+    containerActiveRight.classList.remove( 'front' );
+    containerActiveCent.classList.remove( 'back' );
+} );
 
 
 //! ---------------------- Active Courses ---------------------------------------
 
-const coursesBtn = document.getElementById('courses');
-const coursesActiveMain = document.querySelector('.courses-active');
+const coursesBtn = document.getElementById( 'courses' );
+const coursesActiveMain = document.querySelector( '.courses-active' );
 
 
-coursesBtn.addEventListener('click', () => {
-    coursesActiveMain.classList.toggle('active');
-});
+coursesBtn.addEventListener( 'click', () => {
+    coursesActiveMain.classList.toggle( 'active' );
+} );
 
 
 //!------------------------ API -------------------------------------------------
 
-const populyarLineContainer = document.querySelector('.populyar-line-container');
+const populyarLineContainer = document.querySelector( '.populyar-line-container' );
 let courses;
 
-const PostUI = (filtered) => {
+const PostUI = ( filtered ) => {
     let filteredCources;
 
-    switch (filtered) {
+    switch ( filtered ) {
         case "Frontend":
-            filteredCources = courses.filter((post) => post.courseType === filtered)
+            filteredCources = courses.filter( ( post ) => post.courseType === filtered );
             break;
         case "Backend":
-            filteredCources = courses.filter((post) => post.courseType === filtered)
+            filteredCources = courses.filter( ( post ) => post.courseType === filtered );
             break;
         case "UI/UX":
-            filteredCources = courses.filter((post) => post.courseType === filtered)
+            filteredCources = courses.filter( ( post ) => post.courseType === filtered );
         default:
-            filteredCources = courses
+            filteredCources = courses;
             break;
     }
 
-    populyarLineContainer.innerHTML = ""
+    populyarLineContainer.innerHTML = "";
 
-    filteredCources.forEach((post) => {
+    filteredCources.forEach( ( post ) => {
 
         populyarLineContainer.innerHTML += `
         <div class="populyar-card">
 
                         <div class="populyar-image">
-                            <img src="${post.img}" alt="">
+                            <img src="${ post.img }" alt="">
                         </div>
 
                         <div class="populyar-video-text">
@@ -95,7 +95,7 @@ const PostUI = (filtered) => {
                             <div class="populyar-video-left">
 
                                 <a href="#" class="populyar-btn">
-                                    ${post.courseType}
+                                    ${ post.courseType }
                                 </a>
 
                             </div>
@@ -111,7 +111,7 @@ const PostUI = (filtered) => {
                                     </svg>
                                 </a>
 
-                                <a href="#" class="num">${post.lesson} dərs</a>
+                                <a href="#" class="num">${ post.lesson } dərs</a>
 
                             </div>
 
@@ -122,7 +122,7 @@ const PostUI = (filtered) => {
                         <div class="populyar-text-icon">
 
                             <div class="populyar-paragraph">
-                                <p>${post.title}
+                                <p>${ post.title }
                                 </p>
                             </div>
 
@@ -141,41 +141,41 @@ const PostUI = (filtered) => {
 
         // postList.innerHTML = result;
 
-    });
+    } );
 
-}
+};
 
 const getData = async () => {
-    const {pathname} = location
-    const limit = pathname === "/index.html" ? "?_limit=8" : ""
+    const { pathname } = location;
+    const limit = pathname === "/index.html" ? "?_limit=8" : "";
 
-    const res = await fetch(`http://localhost:3000/courses${limit}`);
+    const res = await fetch( `http://localhost:3000/courses${ limit }` );
     const data = await res.json();
 
     courses = data;
     PostUI();
-}
+};
 
-window.addEventListener("DOMContentLoaded", getData);
+window.addEventListener( "DOMContentLoaded", getData );
 
 
-const populyarCenterContainer = document.querySelector('.populyar-center-container');
-const populyarCenterFrontContainer = document.querySelector('.populyar-center-front-container');
-const populyarCenterBackContainer = document.querySelector('.populyar-center-back-container');
-const populyarCenterUiuxContainer = document.querySelector('.populyar-center-uiux-container');
+const populyarCenterContainer = document.querySelector( '.populyar-center-container' );
+const populyarCenterFrontContainer = document.querySelector( '.populyar-center-front-container' );
+const populyarCenterBackContainer = document.querySelector( '.populyar-center-back-container' );
+const populyarCenterUiuxContainer = document.querySelector( '.populyar-center-uiux-container' );
 
-const commonBtn = document.getElementById('common-btn');
-const froBtn = document.getElementById('fro-btn');
-const backBtn = document.getElementById('back-btn');
-const uiBtn = document.getElementById('ui-btn');
+const commonBtn = document.getElementById( 'common-btn' );
+const froBtn = document.getElementById( 'fro-btn' );
+const backBtn = document.getElementById( 'back-btn' );
+const uiBtn = document.getElementById( 'ui-btn' );
 
-froBtn.addEventListener("click", () => {
-    PostUI("Frontend")
-})
+froBtn.addEventListener( "click", () => {
+    PostUI( "Frontend" );
+} );
 
-backBtn.addEventListener("click", () => {
-    PostUI("Backend")
-})
+backBtn.addEventListener( "click", () => {
+    PostUI( "Backend" );
+} );
 
 
 // commonBtn.addEventListener("click", () => {

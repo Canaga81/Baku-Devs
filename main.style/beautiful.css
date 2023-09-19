@@ -34,6 +34,7 @@ html {
     --transition-input-bg-color: #f4d006;
     --line-border-color: #CAE6E8;
     --line-bg-color: #ECF8F9;
+    --chocolate-color: #BE870D;
 }
 
 /*! Genaral */
@@ -772,6 +773,85 @@ header {
     font-size: 2.6rem;
     font-style: normal;
     font-weight: 700;
+    line-height: normal;
+}
+
+.android-line-6 .android-head .android-backgroud-line {
+    display: flex;
+    flex-direction: column;
+    gap: 3.9rem;
+    width: 57.9rem;
+    height: 81.7rem;
+    border-radius: 8px;
+    border: 1px solid #ECE2CB;
+    background: #FBFBFB;
+    padding-top: 1.8rem;
+    padding-left: 2.7rem;
+}
+
+.android-line-6 .android-head .android-backgroud-line .android-item-head {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.android-line-6 .android-head .android-backgroud-line .android-item-head .begin {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.android-line-6 .android-head .android-backgroud-line .android-item-head .begin h2 {
+    color: var(--chocolate-color);
+    font-family: Mulish;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 166.667% */
+}
+
+.android-line-6 .android-head .android-backgroud-line .android-item-head .begin .android-text {
+    width: 52.3rem;
+    height: 4.9rem;
+}
+
+.android-line-6 .android-head .android-backgroud-line .android-item-head .begin .android-text p {
+    color: var(--text-color);
+    font-family: Mulish;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.android-line-6 .android-head .android-backgroud-line .android-item-head .android-button {
+    width: 11.5rem;
+    height: 3.2rem;
+    border-radius: 70px;
+    border: 1px solid var(--chocolate-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition-button);
+}
+
+.android-line-6 .android-head .android-backgroud-line .android-item-head .android-button:hover {
+    background-color: var(--chocolate-color);
+}
+
+.android-line-6 .android-head .android-backgroud-line .android-item-head .android-button:hover a,
+.android-line-6 .android-head .android-backgroud-line .android-item-head .android-button:hover svg path {
+    color: var(--white-color);
+    fill: var(--white-color);
+}
+
+.android-line-6 .android-head .android-backgroud-line .android-item-head .android-button a {
+    color: var(--chocolate-color);
+    font-family: Mulish;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
     line-height: normal;
 }
 
