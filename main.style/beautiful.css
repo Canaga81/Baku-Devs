@@ -32,6 +32,8 @@ html {
     --input-placeholder-color: #C4C4C4;
     --footer-line-bg-color: #E5E5E5;
     --transition-input-bg-color: #f4d006;
+    --line-border-color: #CAE6E8;
+    --line-bg-color: #ECF8F9;
 }
 
 /*! Genaral */
@@ -672,7 +674,106 @@ header {
 
 /*? Line-5 */
 
-.android-line-5 
+.android-line-5 {
+    display: flex;
+    flex-direction: column;
+    gap: 3.6rem;
+}
+
+.android-line-5 .android-line-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2.1rem;
+}
+
+.android-line-5 .android-line-item .blue-color {
+    color: var(--blue-color);
+    font-family: Mulish;
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.android-line-5 .android-line-item .android-text-p {
+    width: 68.3rem;
+    height: 7.5rem;
+}
+
+.android-line-5 .android-line-item .android-text-p p {
+    color: var(--empty-text-color);
+    font-family: Mulish;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+}
+
+.android-line-5 .android-line-item .android-bg-aqua {
+    width: 57.9rem;
+    height: 8.7rem;
+    border-radius: 8px;
+    border: 1px solid var(--line-border-color);
+    background: var(--line-bg-color);
+}
+
+.android-line-5 .android-line-item .android-bg-aqua.enter {
+    width: 57.9rem;
+    height: 16.9rem;
+}
+
+.android-line-5 .android-line-item .android-bg-aqua.act {
+    width: 57.9rem;
+    height: 27rem;
+}
+
+.android-line-5 .android-line-item .android-bg-aqua p {
+    color: var(--text-color);
+    font-family: Mulish;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    padding-left: 3.4rem;
+    padding-top: 1.8rem;
+}
+
+/*? Line-Empty */
+
+.line-empty-bg {
+    max-width: 57.8rem;
+    height: 1px;
+    background-color: var(--footer-line-bg-color);
+}
+
+/*? Line-6 */
+
+.android-line-6 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.android-line-6 .android-head {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.android-line-6 .android-head .android-icon-h2 {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+}
+
+.android-line-6 .android-head .android-icon-h2 h2 {
+    color: var(--text-color);
+    font-family: Mulish;
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 
 /*! Footer */
 
