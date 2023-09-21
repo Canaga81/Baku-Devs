@@ -192,10 +192,6 @@ header {
     fill: var(--blue-color);
 }
 
-.qeydiyyat path {
-    fill: var(--white-color);
-}
-
 .buttons-line .background-full span {
     color: var(--white-color);
     text-align: center;
@@ -398,6 +394,31 @@ header {
     gap: 5.5rem;
     padding-top: 11rem;
     padding-bottom: 8.9rem;
+    position: relative;
+}
+
+.enter-image .shape-image {
+    position: absolute;
+    left: 21%;
+    top: 22.5%;
+}
+
+.enter-image .frame-15 {
+    position: absolute;
+    left: 19%;
+    top: 54%;
+}
+
+.enter-image .frame-16 {
+    position: absolute;
+    right: 16%;
+    top: 27%;
+}
+
+.enter-image .frame-19 {
+    position: absolute;
+    right: 25%;
+    top: 64%;
 }
 
 .enter-top-container h1 {
@@ -452,9 +473,9 @@ header {
     transition: var(--transition-button);
 }
 
-.social-enter-blue:hover {
+/* .social-enter-blue:hover {
     background: blue;
-}
+} */
 
 .enter-input input {
     width: 35.9rem;
@@ -482,9 +503,9 @@ header {
     transition: var(--transition-button);
 }
 
-.social-enter-red:hover {
+/* .social-enter-red:hover {
     background: red;
-}
+} */
 
 .enter-email {
     display: flex;
@@ -691,6 +712,17 @@ header {
 .enter-bottom .enter-a-text .aqua-text:hover {
     color: var(--google-tomato-color);
 }
+
+/*! Qeydiyyat */
+
+.enter-card.qeydiyyat {
+    height: 95.6rem;
+}
+
+/* .qeydiyyat path {
+    fill: var(--facebook-color);
+
+} */
 
 /*! Footer */
 
