@@ -525,6 +525,48 @@ header {
     line-height: normal;
 }
 
+.enter-password {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.enter-password h3 {
+    color: var(--text-color);
+    font-family: Mulish;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.password-input {
+    width: 41.9rem;
+    height: 6rem;
+    border-radius: 8px;
+    background: var(--input-bg-color);
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    padding-left: 1.3rem;
+}
+
+.password-input input {
+    height: 6rem;
+    width: 35.9rem;
+    border: none;
+    outline: none;
+}
+
+.password-input input::placeholder {
+    color: var(--empty-text-color);
+    font-family: Mulish;
+    font-size: var(--font-size-text);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
 /*! Footer */
 
 footer {
