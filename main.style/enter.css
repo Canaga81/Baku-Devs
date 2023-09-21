@@ -417,6 +417,9 @@ header {
     background: #FFF;
     box-shadow: 0px 30px 60px 0px rgba(1, 94, 100, 0.30);
     padding: 3.5rem 5rem 5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
 
 .enter-card form {
@@ -514,6 +517,7 @@ header {
     width: 35.9rem;
     border: none;
     outline: none;
+    background: var(--input-bg-color);
 }
 
 .email-input input::placeholder {
@@ -526,6 +530,12 @@ header {
 }
 
 .enter-password {
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+}
+
+.password-content {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -556,6 +566,7 @@ header {
     width: 35.9rem;
     border: none;
     outline: none;
+    background: var(--input-bg-color);
 }
 
 .password-input input::placeholder {
@@ -565,6 +576,49 @@ header {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+
+.enter-remember {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remember-left {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.remember-left input {
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: 4px;
+    border: 1px solid var(--empty-text-color);
+}
+
+.remember-left a {
+    color: var(--empty-text-color);
+    font-family: Mulish;
+    font-size: var(--font-size-text);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.remember-right a {
+    color: var(--text-color);
+    text-align: right;
+    font-family: Mulish;
+    font-size: var(--font-size-text);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: var(--transition-text);
+}
+
+.remember-right a:hover {
+    color: var(--google-tomato-color);
 }
 
 /*! Footer */
