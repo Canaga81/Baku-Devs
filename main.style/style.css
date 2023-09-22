@@ -871,6 +871,13 @@ position: absolute;
     width: 100%;
 }
 
+/*? Speed */
+
+.speed {
+    /* opacity: 0; */
+    display: none;
+}
+
 /*! Footer */
 
 footer {
