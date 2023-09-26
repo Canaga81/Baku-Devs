@@ -21,7 +21,7 @@ const password2 = document.getElementById('password2');
 form.addEventListener('submit', e => {
     e.preventDefault();
 
-    window.location.href='qeydiyyat.html';
+    window.location.href='kabinet.html';
 
     validateInputs();
 });

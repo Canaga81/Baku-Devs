@@ -38,6 +38,7 @@ html {
     --input-bg-color: #F6F6F7;
     --facebook-color: #395185;
     --google-tomato-color: #E93E32;
+    --input-bg-color: #DFDBDB;
 }
 
 /*! Genaral */
@@ -379,402 +380,40 @@ header {
     color: var(--text-color);
 }
 
-/*! Enter */
+/*! Kabinet */
 
-.enter {
-    width: 100%;
+.kabinet {
     background-color: var(--big-bg-color);
+    padding: 10rem 15.3rem;
 }
 
-.enter-container {
+.kabinet-container {
     display: flex;
-    flex-direction: column;
+    gap: 5.2rem;
+}
+
+.kabinet-left .kabinet-card {
+    width: 24.8rem;
+    height: 35.7rem;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 5.5rem;
-    padding-top: 11rem;
-    padding-bottom: 8.9rem;
-    position: relative;
-}
-
-.enter-image .shape-image {
-    position: absolute;
-    left: 21%;
-    top: 22.5%;
-}
-
-.enter-image .frame-15 {
-    position: absolute;
-    left: 19%;
-    top: 54%;
-}
-
-.enter-image .frame-16 {
-    position: absolute;
-    right: 16%;
-    top: 27%;
-}
-
-.enter-image .frame-19 {
-    position: absolute;
-    right: 25%;
-    top: 64%;
-}
-
-.enter-top-container h1 {
-    color: var(--text-color);
-    text-align: center;
-    font-family: Lora;
-    font-size: 4.1rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 50px;
-}
-
-.enter-card {
-    width: 51.9rem;
-    height: 68.8rem;
+    flex-direction: column;
     border-radius: 20px;
     background: #FFF;
-    box-shadow: 0px 30px 60px 0px rgba(1, 94, 100, 0.30);
-    padding: 3.5rem 5rem 5rem 5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
+    box-shadow: 6px 10px 20px 0px rgba(1, 94, 100, 0.06);
 }
 
-/*! Forget.Html Start */
-
-.enter-card.forget {
-    width: 51.9rem;
-    height: 29.8rem;
-    border-radius: 20px;
-    background: #FFF;
-    box-shadow: 0px 30px 60px 0px rgba(1, 94, 100, 0.30);
-    padding: 3.5rem 5rem 5rem 5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-}
-
-/*! Forget.Html End */
-
-.enter-card.new-form {
-    width: 51.9rem;
-    height: 58.5rem;
-    flex-shrink: 0;
-    border-radius: 20px;
-    background: #FFF;
-    box-shadow: 0px 30px 60px 0px rgba(1, 94, 100, 0.30);
-    padding: 3.5rem 5rem 5rem 5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-}
-
-/*! --- */
-
-#form {
-    width: 51.9rem;
-    height: 55.5rem;
-    flex-shrink: 0;
-    margin: 20vh auto 0 auto;
-    padding: 9rem 6rem;
-    background-color: whitesmoke;
-    border-radius: 4px;
-    font-size: 1.6rem;
-}
-
-#form h1 {
-    color: #0f2027;
-    text-align: center;
-}
-
-#form label {
-    color: var(--text-color);
-    font-family: Mulish;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-#form button {
-    padding: 1rem;
-    margin-top: 1rem;
-    width: 100%;
-    color: white;
-    background-color: rgb(41, 57, 194);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: var(--transition-button);
-}
-
-#form button:hover {
-    background-color: var(--blue-color);
-}
-
-.input-control {
-    display: flex;
-    flex-direction: column;
-}
-
-.input-control input {
-    border: 2px solid #f0f0f0;
-	border-radius: 4px;
-	display: block;
-	font-size: 1.9rem;
-	padding: 1rem;
-	width: 100%;
-}
-
-.input-control input:focus {
-    outline: 0;
-}
-
-.input-control.success input {
-    border-color: #09c372;
-}
-
-.input-control.error input {
-    border-color: #ff3860;
-}
-
-.input-control .error {
-    color: #ff3860;
-    font-size: 1.5rem;
-    height: 1.36rem;
-}
-
-/*! ---- */
-
-.enter-card form {
-    display: flex;
-    flex-direction: column;
-    gap: 4.2rem;
-}
-
-.enter-social-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1.9rem;
-}
-
-.enter-input {
-    width: 41.9rem;
-    height: 6rem;
-    border-radius: 8px;
-    background: var(--input-bg-color);
-    display: flex;
-}
-
-.social-enter-blue {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 8px 0px 0px 8px;
-    background: var(--facebook-color);
-    border: none;
-    cursor: pointer;
-    transition: var(--transition-button);
-}
-
-/* .social-enter-blue:hover {
-    background: blue;
-} */
-
-.enter-input input {
-    width: 35.9rem;
-    height: 6rem;
-    outline: none;
-    padding-left: 2.2rem;
-}
-
-.enter-input input::placeholder {
-    color: var(--empty-text-color);
-    font-family: Mulish;
-    font-size: var(--font-size-text);
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.social-enter-red {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 8px 0px 0px 8px;
-    background: var(--google-tomato-color);
-    border: none;
-    cursor: pointer;
-    transition: var(--transition-button);
-}
-
-/* .social-enter-red:hover {
-    background: red;
-} */
-
-.enter-email {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.enter-email h3 {
-    color: var(--text-color);
-    font-family: Mulish;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.email-input {
-    width: 41.9rem;
-    height: 6rem;
-    border-radius: 8px;
-    background: var(--input-bg-color);
-    display: flex;
-    align-items: center;
-    gap: 1.3rem;
-    padding-left: 1.3rem;
-}
-
-.email-input input {
-    height: 6rem;
-    width: 35.9rem;
-    border: none;
-    outline: none;
-    background: var(--input-bg-color);
-}
-
-.email-input input::placeholder {
-    color: var(--empty-text-color);
-    font-family: Mulish;
-    font-size: var(--font-size-text);
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.enter-password {
-    display: flex;
-    flex-direction: column;
-    gap: 2.3rem;
-}
-
-.password-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.enter-password h3 {
-    color: var(--text-color);
-    font-family: Mulish;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.password-input {
-    width: 41.9rem;
-    height: 6rem;
-    border-radius: 8px;
-    background: var(--input-bg-color);
-    display: flex;
-    align-items: center;
-    gap: 1.3rem;
-    padding-left: 1.3rem;
-}
-
-.password-input input {
-    height: 6rem;
-    width: 35.9rem;
-    border: none;
-    outline: none;
-    background: var(--input-bg-color);
-}
-
-.password-input input::placeholder {
-    color: var(--empty-text-color);
-    font-family: Mulish;
-    font-size: var(--font-size-text);
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.enter-remember {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.remember-left {
-    display: flex;
-    align-items: center;
-    gap: 1.3rem;
-}
-
-.remember-left input {
-    width: 1.9rem;
-    height: 1.9rem;
-    border-radius: 4px;
-    border: 1px solid var(--empty-text-color);
-}
-
-.remember-left a {
-    color: var(--empty-text-color);
-    font-family: Mulish;
-    font-size: var(--font-size-text);
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.remember-right a {
-    color: var(--text-color);
-    text-align: right;
-    font-family: Mulish;
-    font-size: var(--font-size-text);
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    transition: var(--transition-text);
-}
-
-.remember-right a:hover {
-    color: var(--google-tomato-color);
-}
-
-.enter-bottom {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-
-.enter-bottom .enter-button .enter-btn {
-    display: flex;
-    gap: 0.9rem;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    width: 19.8rem;
-    height: 5rem;
-    border-radius: 70px;
+.card-head {
+    width: 24.8rem;
+    height: 6.4rem;
+    border-radius: 20px 20px 0px 0px;
     background: var(--blue-color);
-    border: none;
-    box-shadow: 0px 10px 30px 0px rgba(1, 94, 100, 0.15);
-    cursor: pointer;
-    transition: var(--transition-button);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.enter-bottom .enter-button .enter-btn:hover {
-    opacity: 0.75;
-}
-
-.enter-bottom .enter-button .enter-btn a {
+.card-head h3 {
     color: var(--white-color);
     font-family: Mulish;
     font-size: 2rem;
@@ -783,52 +422,138 @@ header {
     line-height: normal;
 }
 
-.enter-bottom .enter-a-text {
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2.5rem;
+    padding: 3.4rem 5.9rem;
+}
+
+.card-body a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--blue-color);
+    font-family: Mulish;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 15rem;
+}
+
+.kabinet-right .kabinet-email {
+    display: none;
+}
+
+.kabinet-right .kabinet-email.active {
+    display: block;
+}
+
+.kabinet-right .kabinet-email.active #form {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 5.8rem;
+}
+
+.kabinet-right .kabinet-email.active #form .form-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.kabinet-right .kabinet-email.active #form .form-left .input-control {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.kabinet-right .kabinet-email.active #form h1 {
+    color: #0f2027;
+    text-align: center;
+}
+
+.kabinet-right .kabinet-email.active #form label {
+    color: var(--text-color);
+    font-family: Mulish;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.kabinet-right .kabinet-email.active #form button {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.8rem;
-}
-
-.enter-bottom .enter-a-text .dark-text {
-    color: var(--empty-text-color);
+    gap: 0.3rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    background-color: var(--blue-color);
+    border: none;
+    border-radius: 70px;
+    cursor: pointer;
+    transition: var(--transition-button);
+    color: var(--white-color);
     font-family: Mulish;
-    font-size: var(--font-size-text);
+    font-size: 2rem;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: normal;
-    transition: var(--transition-text);
 }
 
-.enter-bottom .enter-a-text .dark-text:hover {
-    color: var(--text-color);
+.kabinet-right .kabinet-email.active #form button:hover {
+    background-color: var(--color-blue-dark);
 }
 
-.enter-bottom .enter-a-text .aqua-text {
-    color: var(--blue-color);
-    text-align: right;
-    font-family: Mulish;
-    font-size: var(--font-size-text);
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    transition: var(--transition-text);
+.kabinet-right .kabinet-email.active .input-control {
+    display: flex;
+    flex-direction: column;
 }
 
-.enter-bottom .enter-a-text .aqua-text:hover {
-    color: var(--google-tomato-color);
+.kabinet-right .kabinet-email.active .input-control input {
+	display: block;
+	font-size: 1.9rem;
+	padding: 1rem;
+	width: 100%;
+    width: 30rem;
+    height: 5rem;
+    border-radius: 8px;
+    border: 1px solid var(--input-bg-color);
+    background: var(--white-color);
 }
 
-/*! Qeydiyyat */
-
-.enter-card.qeydiyyat {
-    height: 95.6rem;
+.kabinet-right .kabinet-email.active .input-control input:focus {
+    outline: 0;
 }
 
-/* .qeydiyyat path {
-    fill: var(--facebook-color);
+.kabinet-right .kabinet-email.active .input-control.success input {
+    border-color: #09c372;
+}
 
-} */
+.kabinet-right .kabinet-email.active .input-control.error input {
+    border-color: #ff3860;
+}
+
+.kabinet-right .kabinet-email.active .input-control .error {
+    color: #ff3860;
+    font-size: 1.5rem;
+    height: 1.36rem;
+}
+
+.kabinet-right .kabinet-email.active #form .form-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.kabinet-right .kabinet-email.active #form .form-right .input-control {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
 /*! Footer */
 
