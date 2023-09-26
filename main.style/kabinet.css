@@ -434,13 +434,22 @@ header {
     display: flex;
     align-items: center;
     gap: 1rem;
-    color: var(--blue-color);
+    color: var(--empty-text-color);
     font-family: Mulish;
     font-size: 2rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     width: 15rem;
+    transition: var(--transition-text);
+}
+
+.card-body a:hover {
+    color: var(--blue-color);
+}
+
+.card-body a:hover svg path {
+    fill: var(--blue-color);
 }
 
 .kabinet-right .kabinet-email {
