@@ -86,3 +86,7 @@ const validateInputs = () => {
     }
 
 };
+
+//! Button & New Page Active
+
+const refreshBtn = document.getElementById('refresh-btn')
