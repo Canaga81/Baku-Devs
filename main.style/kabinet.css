@@ -643,6 +643,70 @@ header {
     border: 1px solid var(--blue-color);
 }
 
+.kabinet-right .kabinet-abune.active .abune-right {
+    display: flex;
+    flex-direction: column;
+    gap: 3.4rem;
+}
+
+.kabinet-right .kabinet-abune.active .abune-right .abune-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 2.1rem;
+}
+
+.kabinet-right .kabinet-abune.active .abune-right .abune-texts .a-text-svg a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--empty-text-color);
+    font-family: Mulish;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.kabinet-right .kabinet-abune.active .abune-right .abune-texts .a-pink-text-svg a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--pink-text-color);
+    font-family: Mulish;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.kabinet-right .kabinet-abune.active .abune-right .blue-button {
+    width: 18.3rem;
+    height: 5rem;
+    border-radius: 70px;
+    background: var(--blue-color);
+    box-shadow: 0px 10px 30px 0px rgba(1, 94, 100, 0.15);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    font-family: Mulish;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    transition: var(--transition-button);
+}
+
+.kabinet-right .kabinet-abune.active .abune-right .blue-button:hover,
+.kabinet-right .kabinet-abune.active .abune-right .blue-button:hover svg path {
+    background-color: transparent;
+    color: var(--blue-color);
+    fill: var(--blue-color);
+    border: 1px solid var(--blue-color);
+}
+
 /*! Footer */
 
 footer {
