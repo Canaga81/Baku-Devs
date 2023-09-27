@@ -183,6 +183,7 @@ btnnn.forEach( btn => {
 } );
 
 
+
 // commonBtn.addEventListener("click", () => {
 //     populyarCenterContainer.classList.add('common');
 //     populyarCenterFrontContainer.classList.remove('fro');
