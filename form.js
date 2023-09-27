@@ -89,4 +89,30 @@ const validateInputs = () => {
 
 //! Button & New Page Active
 
-const refreshBtn = document.getElementById('refresh-btn')
+//! Kabinet-Page Sehifesini Yaratmaq ucun JS Code
+
+const refreshBtn = document.getElementById( 'refresh-btn' );
+const xMarkBtn = document.getElementById( 'x-mark' );
+const kabinetPage = document.querySelector( '.kabinet-page' );
+
+refreshBtn.addEventListener( 'click', () => {
+    kabinetPage.classList.add( 'active' );
+} );
+
+xMarkBtn.addEventListener( 'click', () => {
+    kabinetPage.classList.remove( 'active' );
+} );
+
+//! Kabinet-Page-2 Sehifesini Yaratmaq ucun JS Code
+
+const page2Btn = document.getElementById( 'page2Btn' );
+const xMark2Btn = document.getElementById( 'x-mark-2' );
+const kabinetPage2 = document.querySelector( '.kabinet-page-2' );
+
+page2Btn.addEventListener( 'click', () => {
+    kabinetPage2.classList.add( 'active2' );
+} );
+
+xMark2Btn.addEventListener( 'click', () => {
+    kabinetPage2.classList.remove( 'active2' );
+} );

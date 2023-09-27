@@ -837,6 +837,80 @@ header {
     border: 1px solid var(--blue-color);
 }
 
+.kabinet-page-2 {
+    display: none;
+}
+
+.kabinet-page-2.active2 {
+    display: block;
+    width: 61.4rem;
+    height: 41.8rem;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 6px 10px 20px 0px rgba(1, 94, 100, 0.6);
+    z-index: 9999;
+    position: absolute;
+    top: 6rem;
+    left: 42%;
+    transform: translateX(-42%);
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+}
+
+.kabinet-page-2.active2 .x-mark svg {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.1rem;
+    transition: var(--transition-text);
+}
+
+.kabinet-page-2.active2 .kabinet-page-2-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5.1rem;
+}
+
+.kabinet-page-2.active2 .kabinet-page-2-container .top-page-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.kabinet-page-2.active2 .kabinet-page-2-container .top-page-2 .kabinet-page-2-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22.1rem;
+}
+
+.kabinet-page-2.active2 .kabinet-page-2-container .top-page-2 .kabinet-page-2-content .kabinet-2-left p {
+    color: var(--text-color);
+    font-family: Mulish;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.kabinet-page-2.active2 .kabinet-page-2-container .top-page-2 .kabinet-page-2-content .kabinet-2-right a {
+    color: var(--text-color);
+    font-family: Mulish;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: right;
+}
+
+.kabinet-page-2.active2 .kabinet-page-2-container .top-page-2 .line-empty-div {
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--line-page-bg);
+}
+
 /*! Footer */
 
 footer {
