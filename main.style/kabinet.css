@@ -911,6 +911,16 @@ header {
     background-color: var(--line-page-bg);
 }
 
+/*! Qebz */
+
+.kabinet-right .kabinet-qebz {
+    display: none;
+}
+
+.kabinet-right .kabinet-qebz.active {
+    display: block;
+}
+
 /*! Footer */
 
 footer {
