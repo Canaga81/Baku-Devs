@@ -386,6 +386,7 @@ header {
 .kabinet {
     background-color: var(--big-bg-color);
     padding: 10rem 15.3rem;
+    position: relative;
 }
 
 .kabinet-container {
@@ -705,6 +706,42 @@ header {
     color: var(--blue-color);
     fill: var(--blue-color);
     border: 1px solid var(--blue-color);
+}
+
+.kabinet-page {
+    display: none;
+    padding: 4.5rem 4.4rem;
+}
+
+.kabinet-page.active {
+    display: block;
+    width: 61.4rem;
+    height: 41.8rem;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 6px 10px 20px 0px rgba(1, 94, 100, 0.6);
+    z-index: 9999;
+    position: absolute;
+    top: 6rem;
+    left: 42%;
+    transform: translateX(-42%);
+}
+
+.kabinet-page.active .x-mark svg {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.1rem;
+    transition: var(--transition-text);
+}
+
+.kabinet-page.active .x-mark svg:hover {
+    opacity: 0.5;
+}
+
+.kabinet-page.active .kabinet-page-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
 }
 
 /*! Footer */
