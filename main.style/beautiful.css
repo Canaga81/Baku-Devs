@@ -484,6 +484,54 @@ header {
     gap: 3rem;
 }
 
+.left-1 {
+    display: none;
+}
+
+.left-1.active {
+    display: block;
+}
+
+.left-2 {
+    display: none;
+}
+
+.left-2.active {
+    display: block;
+}
+
+.left-3 {
+    display: none;
+}
+
+.left-3.active {
+    display: block;
+}
+
+.left-4 {
+    display: none;
+}
+
+.left-4.active {
+    display: block;
+}
+
+.left-5 {
+    display: none;
+}
+
+.left-5.active {
+    display: block;
+}
+
+.left-6 {
+    display: none;
+}
+
+.left-6.active {
+    display: block;
+}
+
 /*? Line-1 */
 
 .android-line-1 {

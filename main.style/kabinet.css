@@ -1154,6 +1154,18 @@ header {
     color: var(--white-color);
 }
 
+.overlay {
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+    position: fixed;
+    inset: 0;
+    opacity: 0.4;
+    background-color: var(--text-color);
+}
+
 /*! Footer */
 
 footer {

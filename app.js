@@ -184,32 +184,76 @@ btnnn.forEach( btn => {
     } );
 } );
 
+//! Android Pages Actives
 
+//? Pages
 
-// commonBtn.addEventListener("click", () => {
-//     populyarCenterContainer.classList.add('common');
-//     populyarCenterFrontContainer.classList.remove('fro');
-//     populyarCenterBackContainer.classList.remove('back');
-//     populyarCenterUiuxContainer.classList.remove('ui');
-// });
+const left_1 = document.querySelector( '.left-1' );
+const left_2 = document.querySelector( '.left-2' );
+const left_3 = document.querySelector( '.left-3' );
+const left_4 = document.querySelector( '.left-4' );
+const left_5 = document.querySelector( '.left-5' );
+const left_6 = document.querySelector( '.left-6' );
 
-// froBtn.addEventListener("click", () => {
-//     populyarCenterFrontContainer.classList.add('fro');
-//     populyarCenterContainer.classList.remove('common');
-//     populyarCenterBackContainer.classList.remove('back');
-//     populyarCenterUiuxContainer.classList.remove('ui');
-// });
+//? Buttons
 
-// backBtn.addEventListener("click", () => {
-//     populyarCenterBackContainer.classList.add('back');
-//     populyarCenterFrontContainer.classList.remove('fro');
-//     populyarCenterContainer.classList.remove('common');
-//     populyarCenterUiuxContainer.classList.remove('ui');
-// });
+const inputBtn1 = document.getElementById( 'input-btn-1' );
+const inputBtn2 = document.getElementById( 'input-btn-2' );
+const inputBtn3 = document.getElementById( 'input-btn-3' );
+const inputBtn4 = document.getElementById( 'input-btn-4' );
+const inputBtn5 = document.getElementById( 'input-btn-5' );
+const inputBtn6 = document.getElementById( 'input-btn-6' );
 
-// uiBtn.addEventListener("click", () => {
-//     populyarCenterUiuxContainer.classList.add('ui');
-//     populyarCenterBackContainer.classList.remove('back');
-//     populyarCenterFrontContainer.classList.remove('fro');
-//     populyarCenterContainer.classList.remove('common');
-// });
+inputBtn1.addEventListener( 'click', () => {
+    left_1.classList.add( 'active' );
+    left_2.classList.remove( 'active' );
+    left_3.classList.remove( 'active' );
+    left_4.classList.remove( 'active' );
+    left_5.classList.remove( 'active' );
+    left_6.classList.remove( 'active' );
+} );
+
+inputBtn2.addEventListener( 'click', () => {
+    left_2.classList.add( 'active' );
+    left_1.classList.remove( 'active' );
+    left_3.classList.remove( 'active' );
+    left_4.classList.remove( 'active' );
+    left_5.classList.remove( 'active' );
+    left_6.classList.remove( 'active' );
+} );
+
+inputBtn3.addEventListener( 'click', () => {
+    left_3.classList.add( 'active' );
+    left_1.classList.remove( 'active' );
+    left_2.classList.remove( 'active' );
+    left_4.classList.remove( 'active' );
+    left_5.classList.remove( 'active' );
+    left_6.classList.remove( 'active' );
+} );
+
+inputBtn4.addEventListener( 'click', () => {
+    left_4.classList.add( 'active' );
+    left_1.classList.remove( 'active' );
+    left_2.classList.remove( 'active' );
+    left_3.classList.remove( 'active' );
+    left_5.classList.remove( 'active' );
+    left_6.classList.remove( 'active' );
+} );
+
+inputBtn5.addEventListener( 'click', () => {
+    left_5.classList.add( 'active' );
+    left_1.classList.remove( 'active' );
+    left_2.classList.remove( 'active' );
+    left_3.classList.remove( 'active' );
+    left_4.classList.remove( 'active' );
+    left_6.classList.remove( 'active' );
+} );
+
+inputBtn6.addEventListener( 'click', () => {
+    left_6.classList.add( 'active' );
+    left_1.classList.remove( 'active' );
+    left_2.classList.remove( 'active' );
+    left_3.classList.remove( 'active' );
+    left_4.classList.remove( 'active' );
+    left_5.classList.remove( 'active' );
+} );

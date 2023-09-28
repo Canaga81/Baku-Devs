@@ -94,13 +94,16 @@ const validateInputs = () => {
 const refreshBtn = document.getElementById( 'refresh-btn' );
 const xMarkBtn = document.getElementById( 'x-mark' );
 const kabinetPage = document.querySelector( '.kabinet-page' );
+const overlay = document.querySelector('.overlay')
 
 refreshBtn.addEventListener( 'click', () => {
     kabinetPage.classList.add( 'active' );
+    overlay.classList.add( 'active' );
 } );
 
 xMarkBtn.addEventListener( 'click', () => {
     kabinetPage.classList.remove( 'active' );
+    overlay.classList.remove( 'active' );
 } );
 
 //! Kabinet-Page-2 Sehifesini Yaratmaq ucun JS Code
@@ -108,6 +111,7 @@ xMarkBtn.addEventListener( 'click', () => {
 const page2Btn = document.getElementById( 'page2Btn' );
 const xMark2Btn = document.getElementById( 'x-mark-2' );
 const kabinetPage2 = document.querySelector( '.kabinet-page-2' );
+// const overlay = document.querySelector('.overlay')
 
 page2Btn.addEventListener( 'click', () => {
     kabinetPage2.classList.add( 'active2' );
