@@ -712,6 +712,7 @@ header {
 .kabinet-page {
     display: none;
     padding: 4.5rem 4.4rem;
+    transition: all 0.5s ease;
 }
 
 .kabinet-page.active {
