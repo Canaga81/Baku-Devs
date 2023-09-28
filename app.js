@@ -78,6 +78,7 @@ const PostUI = ( filtered ) => {
             break;
         case "UI/UX":
             filteredCources = courses.filter( ( post ) => post.courseType === filtered );
+            break;
         default:
             filteredCources = courses;
             break;
@@ -179,6 +180,7 @@ const btnnn = document.querySelectorAll( '.btnnn' );
 btnnn.forEach( btn => {
     btn.addEventListener( 'click', ( e ) => {
         PostUI( e.target.innerText );
+        console.log( 'asas' );
     } );
 } );
 
