@@ -1006,6 +1006,11 @@ header {
 /** Cards */
 
 .populyar-line-container {
+    display: none;
+}
+
+.populyar-line-container.active {
+    display: block;
     display: grid;
     grid-template-columns: auto auto auto auto;    
     gap: 2rem;
