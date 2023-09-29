@@ -63,6 +63,10 @@ header {
     align-items: center;
 }
 
+header .logo a img {
+    width: 100%;
+}
+
 /*? Courses */
 
 .courses {
@@ -136,11 +140,13 @@ header {
     align-items: center;
     justify-content: center;
     gap: 0.6rem;
-    width: 12.8rem;
+    max-width: 12.8rem;
+    min-width: 9rem;
     height: 4.5rem;
     border-radius: 40px;
     border: 1px solid var(--blue-color);
     transition: var(--transition-button);
+    padding: 1.2rem;
 }
 
 .buttons-line .background-transperent:hover {
@@ -168,7 +174,9 @@ header {
     align-items: center;
     justify-content: center;
     gap: 0.4rem;
-    width: 20.6rem;
+    max-width: 20.6rem;
+    padding: 1.2rem;
+    min-width: 9rem;
     height: 4.5rem;
     border-radius: 40px;
     background: var(--blue-color);
@@ -243,7 +251,6 @@ header {
 main .main-container {
     display: flex;
     align-items: center;
-    /* gap: 9.1rem; */
     justify-content: space-between;
 }
 
@@ -253,7 +260,7 @@ main .main-container {
     display: flex;
     flex-direction: column;
     gap: 4.7rem;
-    width: 50%;
+    /* width: 50%; */
 }
 
 .main-left h1 {
@@ -303,8 +310,9 @@ main .main-container {
 }
 
 /*? Right Image */
+
 .main-right {
-    width: 50%;
+    /* width: 50%; */
     position: relative;
 }
 
@@ -483,7 +491,7 @@ position: absolute;
     gap: 6.5rem;
 }
 
-/*** Top */
+/** Top */
 
 .populyar-top-container {
     display: flex;
@@ -915,6 +923,10 @@ footer {
     gap: 2.815rem;
 }
 
+.footer-section-1 .logo img {
+    width: 100%;
+}
+
 .footer-section-1 .lorem-text {
     max-width: 26rem;
     height: 6.8rem;
@@ -1067,7 +1079,9 @@ footer {
     line-height: 26px;
 }
 
+
 /*! Responsive */
+
 
 @media(max-width: 1296px) {
 
@@ -1173,6 +1187,14 @@ footer {
         font-size: 57.6%;
     }
 
+    .general {
+        background: url(../images/Vector-bg.svg);
+        width: 100%;
+        height: 100.5rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     /*! Container */
 
     .container {
@@ -1185,16 +1207,22 @@ footer {
 
     /*? Main */
 
+    main .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 5.1rem;
+        margin-right: 7rem;
+    }
+
     .main-left {
         display: flex;
         flex-direction: column;
         gap: 4.7rem;
-        width: 30%;
     }
 
     .main-right {
-        width: 70%;
-        margin-right: 9rem;
+        margin-right: 6rem;
     }
 
     .main-left h1 {
@@ -1210,6 +1238,7 @@ footer {
 
     .populyar {
         padding: 9rem 6rem;
+        /* margin-top: 20rem; */
     }
 
     .populyar-card {
@@ -1289,7 +1318,7 @@ footer {
         width: 16.8rem;
         height: 5.5rem;
     }
-    
+
     /*! Knowledge */
 
     .knowledge-container {
@@ -1357,7 +1386,7 @@ footer {
     html {
         font-size: 55.5%;
     }
-    
+
     /*! Footer */
 
     .footer-container {
@@ -1523,7 +1552,7 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 2.6rem;
-        
+
     }
 
 }
@@ -1532,6 +1561,165 @@ footer {
 
     html {
         font-size: 43.5%;
+    }
+
+}
+
+@media(max-width: 558px) {
+
+    /*! Main */
+
+    html {
+        font-size: 40.5%;
+    }
+
+    main .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width: 510px) {
+
+    /*! Main */
+
+    .main-left h1 {
+        font-size: 5.5rem;
+    }
+
+    /*! Header */
+
+    .buttons-line {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    /*! Container */
+
+    .container {
+        padding: 5rem 1.5rem;
+    }
+
+    /*! Populyar */
+
+    .populyar {
+        padding: 9rem 1.5rem;
+        margin-top: 15.1rem;
+    }
+
+    /*! Knowledge */
+
+    .knowledge-container {
+        padding: 13.8rem 1.5rem;
+    }
+
+    /*! Footer */
+
+    .footer-container {
+        padding: 0 1.5rem;
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+    }
+
+    .footer-top-container {
+        display: flex;
+        gap: 6rem;
+    }
+
+}
+
+@media(max-width: 478px) {
+
+    /*! Populyar */
+
+    .populyar-center-container.common {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .populyar-line-container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 2rem;
+    }
+
+    .populyar-card {
+        width: 48rem;
+        height: 48.7rem;
+    }
+
+    .populyar-top-right-buttons {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .populyar-top-right-buttons .populyar-button {
+        width: 11.7rem;
+        height: 4.8rem;
+    }
+
+    /*! Active Header Big */
+
+    .container-active-center {
+        display: flex;
+        align-items: start;
+        gap: 3rem;
+        padding-right: 34.6rem;
+    }
+
+    .container-active-icon .icon-mark .fa-xmark {
+        position: absolute;
+        left: 4.5rem;
+        top: 4.4rem;
+        font-size: 2.5rem;
+        color: var(--text-color);
+        transition: var(--transition-text);
+    }
+
+    /*! Footer */
+
+    .footer-top-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-section-1 .lorem-text p {
+        font-size: 3rem;
+    }
+
+    .footer-section-2 .footer-ul-items .footer-ul li {
+        font-size: 2.4rem;
+    }
+
+    .footer-section-2 .footer-ul-items .footer-ul li a {
+        font-size: 2.4rem;
+    }
+
+    .footer-section-3 .footer-text-p p {
+        font-size: 2.7rem;
+    }
+
+    .footer-section-3 .footer-text-p p span {
+        font-size: 2.7rem;
+    }
+
+}
+
+@media(max-width: 343px) {
+
+    .main-left h1 {
+        color: var(--text-color);
+        font-family: Lora;
+        font-size: 3.9rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 68px;
     }
 
 }
