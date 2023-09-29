@@ -1159,3 +1159,17 @@ footer {
     }
 
 }
+
+@media(max-width: 1056px) {
+
+    html {
+        font-size: 57.6%;
+    }
+
+    .footer-container {
+        padding: 0 6rem;
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+    }
+
+}
