@@ -1061,8 +1061,16 @@ footer {
 
 @media(max-width: 1296px) {
 
-    html {
-        font-size: 59.5%;
+    /*! Header */
+
+    .container {
+        padding: 5rem 12.6rem;
+    }
+
+    /*! Populyar */
+
+    .populyar {
+        padding: 9rem 12.6rem;
     }
 
     .populyar-line-container {
@@ -1071,4 +1079,27 @@ footer {
         gap: 2rem;
     }
 
+    /*! Knowledge */
+
+    .knowledge-container {
+        padding: 13.8rem 12.6rem;
+    }
+
+    .knowledge-center-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    /*! Footer */
+
+    .footer-container {
+        padding: 0 12.6rem;
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 11.5rem;
+    }
+    
 }
