@@ -208,8 +208,8 @@ header {
     display: block;
     background-color: #ccc;
     border-radius: 10px;
-    width: 200px;
-    height: 160px;
+    width: 20rem;
+    height: 16rem;
     position: absolute;
     z-index: 100;
     left: 34.6%;
@@ -270,7 +270,7 @@ main .main-container {
 }
 
 .main-left .crs-btn {
-    width: 18rem;
+    max-width: 18rem;
     height: 5.5rem;
     border-radius: 70px;
     background: var(--blue-color);
@@ -468,6 +468,8 @@ position: absolute;
 .container-active-end.ui a:hover {
     color: var(--text-color);
 }
+
+
 
 /*! Populyar */
 
@@ -777,6 +779,7 @@ position: absolute;
     display: flex;
     flex-direction: column;
     gap: 2.6rem;
+    flex-wrap: wrap;
 }
 
 .knowledge-card {
@@ -835,6 +838,7 @@ position: absolute;
 
 .knowledge-share.top {
     margin-top: 2.6rem;
+    flex-wrap: wrap;
 }
 
 .knowledge-right .knowledge-image {
@@ -1085,12 +1089,6 @@ footer {
         padding: 13.8rem 12.6rem;
     }
 
-    .knowledge-center-container {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-    }
-
     /*! Footer */
 
     .footer-container {
@@ -1102,4 +1100,62 @@ footer {
         gap: 11.5rem;
     }
     
+}
+
+@media(max-width: 1235px) {
+
+    /*! Knowledge */
+
+    .knowledge-center-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 6.9rem;
+    }
+
+    .knowledge-left {
+        display: flex;
+        gap: 12rem;
+    }
+}
+
+@media(max-width: 1155px) {
+
+    html {
+        font-size: 59.5%;
+    }
+
+    /*! Container */
+
+    .container {
+        padding: 5rem 11.4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+        gap: 10rem;
+    }
+
+    /*! Populyar */
+
+    .populyar {
+        padding: 9rem 11.4rem;
+    }
+
+    /*! Knowledge */
+
+    .knowledge-container {
+        padding: 13.8rem 11.4rem;
+    }
+
+    /*! Footer */
+
+    .footer-container {
+        padding: 0 11.4rem;
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 9.6rem;
+    }
+
 }
