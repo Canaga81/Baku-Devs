@@ -983,7 +983,7 @@ footer {
 
 .footer-input {
     display: flex;
-    width: 39rem;
+    max-width: 39rem;
     height: 6rem;
     border-radius: 60px;
     border: 1px solid rgba(0, 141, 150, 0.50);
@@ -1010,7 +1010,8 @@ footer {
 }
 
 .footer-input .input-btn {
-    width: 10rem;
+    max-width: 10rem;
+    min-width: 7rem;
     height: 6rem;
     border-radius: 60px;
     background: var(--orange-text-color);
@@ -1289,7 +1290,8 @@ footer {
     }
 
     .knowledge-card {
-        width: 39.6rem;
+        max-width: 39.6rem;
+        min-width: 32rem;
         height: 36rem;
     }
 
@@ -1339,6 +1341,100 @@ footer {
     .footer-section-2 .footer-ul-items {
         display: flex;
         gap: 5.2rem;
+    }
+
+}
+
+@media(max-width: 912px) {
+
+    html {
+        font-size: 55.5%;
+    }
+    
+    /*! Footer */
+
+    .footer-container {
+        padding: 0 3rem;
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 11.5rem;
+    }
+
+    .footer-section-2 .footer-ul-items {
+        display: flex;
+        gap: 6.6rem;
+    }
+
+}
+
+@media(max-width: 897px) {
+
+    /*! Populyar */
+
+    .populyar-line-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 5rem;
+    }
+
+    /*! Knowledge */
+
+    .knowledge-card {
+        height: 39rem;
+    }
+
+}
+
+@media(max-width: 862px) {
+
+    /*! Header */
+
+    .desire {
+        display: none;
+    }
+
+}
+
+@media(max-width: 810px) {
+
+    /*? Main */
+
+    .main-left h1 {
+        color: var(--text-color);
+        font-family: Lora;
+        font-size: 3.6rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 68px;
+    }
+
+    /*! Footer */
+
+    .footer-section-2 .footer-ul-items {
+        display: flex;
+        gap: 6.6rem;
+    }
+
+    .footer-section-1 .lorem-text p {
+        line-height: 21px;
+    }
+
+    .footer-section-2 .footer-ul-items .footer-ul li {
+        font-size: 1.65rem;
+    }
+
+    .footer-section-2 .footer-ul-items .footer-ul li a {
+        font-size: 1.65rem;
+    }
+
+    .footer-section-3 .footer-text-p p {
+        font-size: 1.65rem;
+    }
+
+    .footer-section-3 .footer-text-p p span {
+        font-size: 1.65rem;
     }
 
 }
