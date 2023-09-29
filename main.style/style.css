@@ -1117,6 +1117,7 @@ footer {
         display: flex;
         gap: 12rem;
     }
+
 }
 
 @media(max-width: 1155px) {
@@ -1291,7 +1292,7 @@ footer {
 
     .knowledge-card {
         max-width: 39.6rem;
-        min-width: 32rem;
+        min-width: 21rem;
         height: 36rem;
     }
 
@@ -1435,6 +1436,38 @@ footer {
 
     .footer-section-3 .footer-text-p p span {
         font-size: 1.65rem;
+    }
+
+}
+
+@media(max-width: 715px) {
+
+    html {
+        font-size: 50.5%;
+    }
+
+    /*! Knowledge */
+
+    .knowledge-top-container h2 {
+        margin-bottom: 5.1rem;
+        line-height: 39px;
+    }
+
+    /*! Populyar */
+
+    .populyar-card {
+        width: 37rem;
+        height: 42.6rem;
+        border-radius: 20px;
+        background: #FFF;
+        box-shadow: var(--box-shadow);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding-top: 3.2rem;
+        cursor: pointer;
+        transition: var(--transition-button);
     }
 
 }
