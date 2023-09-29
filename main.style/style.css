@@ -271,6 +271,7 @@ main .main-container {
 
 .main-left .crs-btn {
     max-width: 18rem;
+    min-width: 13.5rem;
     height: 5.5rem;
     border-radius: 70px;
     background: var(--blue-color);
@@ -741,7 +742,7 @@ position: absolute;
 }
 
 .knowledge-top-container h2 {
-    width: 85.5rem;
+    max-width: 85.5rem;
     height: 6rem;
     color: var(--text-color);
     font-family: Lora;
@@ -752,7 +753,7 @@ position: absolute;
 }
 
 .knowledge-top-container p {
-    width: 73.4rem;
+    max-width: 73.4rem;
     height: 3.8rem;
     color: var(--text-color);
     font-family: Mulish;
@@ -820,7 +821,7 @@ position: absolute;
 }
 
 .knowledge-card .knowledge-text {
-    width: 26rem;
+    max-width: 26rem;
     height: 6.8rem;
 }
 
@@ -909,7 +910,7 @@ footer {
 }
 
 .footer-section-1 .lorem-text {
-    width: 26rem;
+    max-width: 26rem;
     height: 6.8rem;
 }
 
@@ -1233,6 +1234,111 @@ footer {
         padding: 0 6rem;
         padding-top: 7rem;
         padding-bottom: 3rem;
+    }
+
+}
+
+@media(max-width: 957px) {
+
+    /*! Container */
+
+    .container {
+        padding: 5rem 4.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10rem;
+    }
+
+    /*? Main */
+
+    .main-left h1 {
+        color: var(--text-color);
+        font-family: Lora;
+        font-size: 4.2rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 54px;
+    }
+
+    /*! Populyar */
+
+    .populyar {
+        padding: 9rem 4.5rem;
+    }
+
+    .populyar-top-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2.1rem;
+    }
+
+    .populyar-top-left h2 {
+        font-size: 5.1rem;
+    }
+
+    .populyar-top-right-buttons .populyar-button {
+        width: 16.8rem;
+        height: 5.5rem;
+    }
+    
+    /*! Knowledge */
+
+    .knowledge-container {
+        padding: 13.8rem 4.5rem;
+    }
+
+    .knowledge-card {
+        width: 39.6rem;
+        height: 36rem;
+    }
+
+    .knowledge-card .knowledge-icon {
+        width: 9rem;
+        height: 9rem;
+        border-radius: 14px;
+        background: var(--pink-bg-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .knowledge-card .knowledge-head h3 {
+        color: var(--text-color);
+        text-align: center;
+        font-family: Mulish;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .knowledge-card .knowledge-text p {
+        color: var(--empty-text-color);
+        text-align: center;
+        font-family: Mulish;
+        font-size: 1.83rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    /*! Footer */
+
+    .footer-container {
+        padding: 0 4.5rem;
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+    }
+
+    .footer-top-container {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .footer-section-2 .footer-ul-items {
+        display: flex;
+        gap: 5.2rem;
     }
 
 }
