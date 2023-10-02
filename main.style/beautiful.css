@@ -32,9 +32,6 @@ html {
     --input-placeholder-color: #C4C4C4;
     --footer-line-bg-color: #E5E5E5;
     --transition-input-bg-color: #f4d006;
-    --line-border-color: #CAE6E8;
-    --line-bg-color: #ECF8F9;
-    --chocolate-color: #BE870D;
 }
 
 /*! Genaral */
@@ -50,11 +47,11 @@ html {
 /*! Container */
 
 .container {
-    padding: 3.5rem 15rem;
+    padding: 5rem 15rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* gap: 10rem; */
+    gap: 10rem;
 }
 
 /*! Header */
@@ -64,6 +61,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header .logo a img {
+    width: 100%;
 }
 
 /*? Courses */
@@ -139,11 +140,13 @@ header {
     align-items: center;
     justify-content: center;
     gap: 0.6rem;
-    width: 12.8rem;
+    max-width: 12.8rem;
+    min-width: 9rem;
     height: 4.5rem;
     border-radius: 40px;
     border: 1px solid var(--blue-color);
     transition: var(--transition-button);
+    padding: 1.2rem;
 }
 
 .buttons-line .background-transperent:hover {
@@ -171,7 +174,9 @@ header {
     align-items: center;
     justify-content: center;
     gap: 0.4rem;
-    width: 20.6rem;
+    max-width: 20.6rem;
+    padding: 1.2rem;
+    min-width: 9rem;
     height: 4.5rem;
     border-radius: 40px;
     background: var(--blue-color);
@@ -211,8 +216,8 @@ header {
     display: block;
     background-color: #ccc;
     border-radius: 10px;
-    width: 200px;
-    height: 160px;
+    width: 20rem;
+    height: 16rem;
     position: absolute;
     z-index: 100;
     left: 34.6%;
@@ -599,7 +604,7 @@ header {
 }
 
 .android-line-2 .android-top-line .android-right {
-    width: 40.8rem;
+    max-width: 40.8rem;
     height: 9.3rem;
 }
 
@@ -613,8 +618,9 @@ header {
 }
 
 .android-line-2 .android-bottom-line .android-text {
-    width: 68.2rem;
-    height: 6.6rem;
+    max-width: 68.2rem;
+    /* min-width: 48rem; */
+    max-height: 6.6rem;
 }
 
 .android-line-2 .android-bottom-line .android-text p {
@@ -652,7 +658,7 @@ header {
 
 .android-line-3 .android-body-item .android-image {
     margin-left: 5.3rem;
-    width: 56rem;
+    max-width: 56rem;
     height: 31.6rem;
 }
 
@@ -661,7 +667,7 @@ header {
 }
 
 .android-line-3 .android-body-item .android-text {
-    width: 68.3rem;
+    max-width: 68.3rem;
     height: 9.5rem;
 }
 
@@ -698,7 +704,7 @@ header {
 }
 
 .android-line-4 .android-body .android-image {
-    width: 68.6rem;
+    max-width: 68.6rem;
     height: 45.7rem;
 }
 
@@ -707,7 +713,7 @@ header {
 }
 
 .android-line-4 .android-body .android-text {
-    width: 68.3rem;
+    max-width: 68.3rem;
     height: 9.3rem;
 }
 
@@ -744,7 +750,7 @@ header {
 }
 
 .android-line-5 .android-line-item .android-text-p {
-    width: 68.3rem;
+    max-width: 68.3rem;
     height: 7.5rem;
 }
 
@@ -759,7 +765,7 @@ header {
 }
 
 .android-line-5 .android-line-item .android-bg-aqua {
-    width: 57.9rem;
+    max-width: 57.9rem;
     height: 8.7rem;
     border-radius: 8px;
     border: 1px solid var(--line-border-color);
@@ -767,12 +773,12 @@ header {
 }
 
 .android-line-5 .android-line-item .android-bg-aqua.enter {
-    width: 57.9rem;
+    max-width: 57.9rem;
     height: 16.9rem;
 }
 
 .android-line-5 .android-line-item .android-bg-aqua.act {
-    width: 57.9rem;
+    max-width: 57.9rem;
     height: 27rem;
 }
 
@@ -788,7 +794,7 @@ header {
 }
 
 .android-line-5 .android-line-item .android-text-paragraph {
-    width: 68.3rem;
+    max-width: 68.3rem;
     height: 7.2rem;
 }
 
@@ -842,7 +848,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 3.9rem;
-    width: 57.9rem;
+    max-width: 57.9rem;
     height: 81.7rem;
     border-radius: 8px;
     border: 1px solid #ECE2CB;
@@ -874,7 +880,7 @@ header {
 }
 
 .android-line-6 .android-head .android-backgroud-line .android-item-head .begin .android-text {
-    width: 52.3rem;
+    max-width: 52.3rem;
     height: 4.9rem;
 }
 
@@ -888,7 +894,7 @@ header {
 }
 
 .android-line-6 .android-head .android-backgroud-line .android-item-head .android-button {
-    width: 11.5rem;
+    max-width: 11.5rem;
     height: 3.2rem;
     border-radius: 70px;
     border: 1px solid var(--chocolate-color);
@@ -934,7 +940,7 @@ header {
 }
 
 .android-line-6 .android-head .android-backgroud-line .android-item-body .android-bg-pink {
-    width: 52.3rem;
+    max-width: 52.3rem;
     height: 20.2rem;
     border-radius: 8px;
     border: 1px solid #ECE2CB;
@@ -959,7 +965,7 @@ header {
 }
 
 .android-line-6 .android-item-container .begin {
-    width: 57.9rem;
+    max-width: 57.9rem;
     height: 18.5rem;
     padding-top: 1.8rem;
     padding-left: 2.7rem;
@@ -978,7 +984,7 @@ header {
 }
 
 .android-line-6 .android-item-container .begin .android-text-button p {
-    width: 52.3rem;
+    max-width: 52.3rem;
     height: 4.9rem;
     color: var(--text-color);
     font-family: Mulish;
@@ -990,7 +996,7 @@ header {
 }
 
 .android-line-6 .android-item-container .begin .android-text-button .android-button {
-    width: 11.5rem;
+    max-width: 11.5rem;
     height: 3.2rem;
     border-radius: 70px;
     border: 1px solid var(--chocolate-color);
@@ -1038,7 +1044,7 @@ header {
 }
 
 .android-right-container .android-right-center {
-    width: 36rem;
+    max-width: 36rem;
     height: 77.7rem;
     border-radius: 8px;
     border: 1px solid #DFDBDB;
@@ -1076,7 +1082,7 @@ header {
 }
 
 .inputcenter .content-rigth .content-right-top {
-    width: 29.1rem;
+    max-width: 29.1rem;
     height: 4.9rem;
 }
 
@@ -1134,8 +1140,12 @@ footer {
     gap: 2.815rem;
 }
 
+.footer-section-1 .logo img {
+    width: 100%;
+}
+
 .footer-section-1 .lorem-text {
-    width: 26rem;
+    max-width: 26rem;
     height: 6.8rem;
 }
 
@@ -1208,7 +1218,7 @@ footer {
 
 .footer-input {
     display: flex;
-    width: 39rem;
+    max-width: 39rem;
     height: 6rem;
     border-radius: 60px;
     border: 1px solid rgba(0, 141, 150, 0.50);
@@ -1235,7 +1245,8 @@ footer {
 }
 
 .footer-input .input-btn {
-    width: 10rem;
+    max-width: 10rem;
+    min-width: 7rem;
     height: 6rem;
     border-radius: 60px;
     background: var(--orange-text-color);
@@ -1283,4 +1294,486 @@ footer {
     font-style: normal;
     font-weight: 500;
     line-height: 26px;
+}
+
+/*! Responsive */
+
+
+@media(max-width: 1296px) {
+
+    /*! Header */
+
+    .container {
+        padding: 5rem 12.6rem;
+    }
+
+    /*! Populyar */
+
+    .populyar {
+        padding: 9rem 12.6rem;
+    }
+
+    .populyar-line-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 2rem;
+    }
+
+    /*! Android */
+
+    .android {
+        padding: 6rem 12.6rem;
+    }
+
+    .android-body {
+        display: flex;
+        gap: 10rem;
+    }
+
+    /*! Footer */
+
+    .footer-container {
+        padding: 0 12.6rem;
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 11.5rem;
+    }
+
+}
+
+@media(max-width: 1235px) {}
+
+@media(max-width: 1155px) {
+
+    html {
+        font-size: 59.5%;
+    }
+
+    /*! Container */
+
+    .container {
+        padding: 5rem 11.4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+        gap: 10rem;
+    }
+
+    /*! Android */
+
+    .android-line-2 .android-bottom-line .android-text {
+        max-width: 68.2rem;
+        /* min-width: 48rem; */
+        max-height: 6.6rem;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+
+    .android-line-3 .android-body-item .android-text {
+        max-width: 68.3rem;
+        height: 9.5rem;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+
+    .android-line-4 .android-body .android-text {
+        max-width: 68.3rem;
+        height: 9.3rem;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+
+    .android-line-5 .android-line-item .android-bg-aqua {
+        max-width: 57.9rem;
+        height: 8.7rem;
+        border-radius: 8px;
+        margin-top: 6.9rem;
+        border: 1px solid var(--line-border-color);
+        background: var(--line-bg-color);
+    }
+
+    /*! Footer */
+
+    .footer-container {
+        padding: 0 11.4rem;
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 9.6rem;
+    }
+
+}
+
+@media(max-width: 1056px) {
+
+    html {
+        font-size: 57.6%;
+    }
+
+    .general {
+        background: url(../images/Vector-bg.svg);
+        width: 100%;
+        /* height: 100.5rem; */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /*! Container */
+
+    .container {
+        padding: 5rem 6rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+        gap: 10rem;
+    }
+
+    /*! Android */
+
+    .android-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .android-body {
+        display: flex;
+        flex-direction: column-reverse;
+        /* align-items: center; */
+    }
+
+    /*! Footer */
+
+    .footer-container {
+        padding: 0 6rem;
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+    }
+
+}
+
+@media(max-width: 957px) {
+
+    /*! Container */
+
+    .container {
+        padding: 5rem 4.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10rem;
+    }
+
+    /*? Main */
+
+    .main-left h1 {
+        color: var(--text-color);
+        font-family: Lora;
+        font-size: 4.2rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 54px;
+    }
+
+    /*! Footer */
+
+    .footer-container {
+        padding: 0 4.5rem;
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+    }
+
+    .footer-top-container {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .footer-section-2 .footer-ul-items {
+        display: flex;
+        gap: 5.2rem;
+    }
+
+}
+
+@media(max-width: 912px) {
+
+    html {
+        font-size: 55.5%;
+    }
+
+    /*! Android */
+
+    .android-line-2 .android-bottom-line .android-text {
+        margin-top: 9rem;
+        margin-bottom: 6rem;
+    }
+
+    .android-line-3 .android-head-item h2 {
+        margin-top: 9rem;
+    }
+
+    /*! Footer */
+
+    .footer-container {
+        padding: 0 3rem;
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 11.5rem;
+    }
+
+    .footer-section-2 .footer-ul-items {
+        display: flex;
+        gap: 6.6rem;
+    }
+
+}
+
+@media(max-width: 897px) {
+
+    /*! Populyar */
+
+    .populyar-line-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 5rem;
+    }
+
+}
+
+@media(max-width: 862px) {
+
+    /*! Header */
+
+    .desire {
+        display: none;
+    }
+
+}
+
+@media(max-width: 810px) {
+
+    /*! Footer */
+
+    .footer-section-2 .footer-ul-items {
+        display: flex;
+        gap: 6.6rem;
+    }
+
+    .footer-section-1 .lorem-text p {
+        line-height: 21px;
+    }
+
+    .footer-section-2 .footer-ul-items .footer-ul li {
+        font-size: 1.65rem;
+    }
+
+    .footer-section-2 .footer-ul-items .footer-ul li a {
+        font-size: 1.65rem;
+    }
+
+    .footer-section-3 .footer-text-p p {
+        font-size: 1.65rem;
+    }
+
+    .footer-section-3 .footer-text-p p span {
+        font-size: 1.65rem;
+    }
+
+}
+
+@media(max-width: 715px) {
+
+    html {
+        font-size: 50.5%;
+    }
+
+    /*! Populyar */
+
+    .populyar-card {
+        width: 37rem;
+        height: 42.6rem;
+        border-radius: 20px;
+        background: #FFF;
+        box-shadow: var(--box-shadow);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding-top: 3.2rem;
+        cursor: pointer;
+        transition: var(--transition-button);
+    }
+
+}
+
+@media(max-width: 702px) {
+
+    /*! Android */
+
+    .inputcenter .content-rigth .content-right-bottom {
+        margin-top: 2.4rem;
+        /* margin-bottom: 2.4rem; */
+    }
+
+}
+
+@media(max-width: 654px) {
+
+    html {
+        font-size: 46.5%;
+    }
+
+}
+
+@media(max-width: 629px) {
+
+    html {
+        font-size: 43.5%;
+    }
+
+}
+
+@media(max-width: 558px) {
+
+    html {
+        font-size: 40.5%;
+    }
+
+}
+
+@media(max-width: 510px) {
+
+    /*! Header */
+
+    .buttons-line {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    /*! Container */
+
+    .container {
+        padding: 5rem 1.5rem;
+    }
+
+    /*! Populyar */
+
+    .populyar {
+        padding: 9rem 1.5rem;
+        margin-top: 15.1rem;
+    }
+
+    /*! Footer */
+
+    .footer-container {
+        padding: 0 1.5rem;
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+    }
+
+    .footer-top-container {
+        display: flex;
+        gap: 6rem;
+    }
+
+}
+
+@media(max-width: 478px) {
+
+    /*! Populyar */
+
+    .populyar-center-container.common {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .populyar-line-container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 2rem;
+    }
+
+    .populyar-card {
+        width: 48rem;
+        height: 48.7rem;
+    }
+
+    .populyar-top-right-buttons {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .populyar-top-right-buttons .populyar-button {
+        width: 11.7rem;
+        height: 4.8rem;
+    }
+
+    /*! Active Header Big */
+
+    .container-active-center {
+        display: flex;
+        align-items: start;
+        gap: 3rem;
+        padding-right: 34.6rem;
+    }
+
+    .container-active-icon .icon-mark .fa-xmark {
+        position: absolute;
+        left: 4.5rem;
+        top: 4.4rem;
+        font-size: 2.5rem;
+        color: var(--text-color);
+        transition: var(--transition-text);
+    }
+
+    /*! Footer */
+
+    .footer-top-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-section-1 .lorem-text p {
+        font-size: 3rem;
+    }
+
+    .footer-section-2 .footer-ul-items .footer-ul li {
+        font-size: 2.4rem;
+    }
+
+    .footer-section-2 .footer-ul-items .footer-ul li a {
+        font-size: 2.4rem;
+    }
+
+    .footer-section-3 .footer-text-p p {
+        font-size: 2.7rem;
+    }
+
+    .footer-section-3 .footer-text-p p span {
+        font-size: 2.7rem;
+    }
+
+}
+
+@media(max-width: 343px) {
+
+}
+
+@media(max-width: 333px) {
+
+    html {
+        font-size: 37.5%;
+    }
+
 }
