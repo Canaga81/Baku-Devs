@@ -1567,11 +1567,11 @@ footer {
 
 @media(max-width: 558px) {
 
-    /*! Main */
-
     html {
         font-size: 40.5%;
     }
+
+    /*! Main */
 
     main .main-container {
         display: flex;
@@ -1720,6 +1720,14 @@ footer {
         font-style: normal;
         font-weight: 600;
         line-height: 68px;
+    }
+
+}
+
+@media(max-width: 333px) {
+    
+    html {
+        font-size: 37.5%;
     }
 
 }
