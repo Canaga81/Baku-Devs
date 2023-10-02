@@ -450,6 +450,7 @@ header .logo a img {
     display: flex;
     gap: 1.9rem;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .social-image-1 .shape-396 {
@@ -936,6 +937,12 @@ footer {
 
 @media(max-width: 1235px) {
 
+    /*! Social */
+
+    .social-container {
+        padding: 12rem 10rem;
+    }
+
     /*! About */
 
     .about-container {
@@ -1203,6 +1210,16 @@ footer {
         font-style: normal;
         font-weight: 600;
         line-height: 68px;
+    }
+
+    .question {
+        background-color: var(--bg-knowledge-color);
+        padding: 10rem 0;
+    }    
+
+    .question-center form {
+        display: flex;
+        flex-direction: column;
     }
 
     /*! Footer */
