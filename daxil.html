@@ -188,7 +188,7 @@
             </div>
 
             <div class="enter-card">
-                <form>
+                <form id="formEl">
                     <div class="enter-social-content">
                         <div class="enter-input">
                             <button class="social-enter-blue">
@@ -210,7 +210,7 @@
                                 </svg>
                             </button>
 
-                            <input type="text" placeholder="Facebook ilə daxil ol">
+                            <input type="text" id="facebook-input" placeholder="Facebook ilə daxil ol">
                         </div>
 
                         <div class="enter-input">
@@ -224,7 +224,7 @@
                                 </svg>
                             </button>
 
-                            <input type="text" placeholder="Google ilə qeydiyyatdan keç">
+                            <input type="text" id="google-input" placeholder="Google ilə qeydiyyatdan keç">
 
                         </div>
                     </div>
@@ -240,7 +240,7 @@
                                     fill="#939393" />
                             </svg>
 
-                            <input type="email" placeholder="Email ünvanı" required>
+                            <input type="email" id="email-inputs" placeholder="Email ünvanı" required>
                         </div>
                     </div>
 
@@ -257,7 +257,7 @@
                                         fill="#939393" />
                                 </svg>
 
-                                <input type="password" placeholder="Şifrə">
+                                <input type="password" id="password-input" placeholder="Şifrə">
                             </div>
                         </div>
 
@@ -282,9 +282,9 @@
 
                     <div class="enter-button">
 
-                        <button class="enter-btn">
+                        <button type="submit" class="enter-btn">Daxil ol
 
-                            <a href="qeydiyyat.html">Daxil ol</a>
+                            <!-- <a href="qeydiyyat.html">Daxil ol</a> -->
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none">
                                 <path
@@ -420,7 +420,8 @@
 
     <!--! Footer End -->
 
-    <script src="app.js"></script>
+    <script src="./forminput.js"></script>
+    <script src="./app.js"></script>
 
 </body>
 

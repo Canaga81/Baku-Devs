@@ -84,6 +84,7 @@ const PostUI = ( filtered ) => {
             break;
     }
 
+
     populyarLineContainer.innerHTML = "";
 
     filteredCources.forEach( ( post ) => {
@@ -179,6 +180,7 @@ const uiBtn = document.getElementById( 'ui-btn' );
 const btnnn = document.querySelectorAll( '.btnnn' );
 btnnn.forEach( btn => {
     btn.addEventListener( 'click', ( e ) => {
+        e.preventDefault();
         PostUI( e.target.innerText );
         console.log( 'asas' );
     } );
