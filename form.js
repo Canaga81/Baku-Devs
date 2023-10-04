@@ -94,7 +94,7 @@ const validateInputs = () => {
 const refreshBtn = document.getElementById( 'refresh-btn' );
 const xMarkBtn = document.getElementById( 'x-mark' );
 const kabinetPage = document.querySelector( '.kabinet-page' );
-const overlay = document.querySelector('.overlay')
+const overlay = document.querySelector( '.overlay' );
 
 refreshBtn.addEventListener( 'click', () => {
     kabinetPage.classList.add( 'active' );
@@ -242,28 +242,32 @@ const qebzlerBtn = document.getElementById( 'qebzler' );
 const istekBtn = document.getElementById( 'istek' );
 const cixisBtn = document.getElementById( 'cixis' );
 
-profileBtn.addEventListener( 'click', () => {
+profileBtn.addEventListener( 'click', ( e ) => {
+    e.preventDefault();
     kabinetEmail.classList.add( 'active' );
     kabinetAbune.classList.remove( 'active' );
     kabinetQebz.classList.remove( 'active' );
-    populyarLineContainerEl.classList.remove('active')
+    populyarLineContainerEl.classList.remove( 'active' );
 } );
 
-abunelikBtn.addEventListener( 'click', () => {
+abunelikBtn.addEventListener( 'click', ( e ) => {
+    e.preventDefault();
     kabinetAbune.classList.add( 'active' );
     kabinetEmail.classList.remove( 'active' );
     kabinetQebz.classList.remove( 'active' );
-    populyarLineContainerEl.classList.remove('active')
+    populyarLineContainerEl.classList.remove( 'active' );
 } );
 
-qebzlerBtn.addEventListener( 'click', () => {
+qebzlerBtn.addEventListener( 'click', ( e ) => {
+    e.preventDefault();
     kabinetQebz.classList.add( 'active' );
     kabinetEmail.classList.remove( 'active' );
     kabinetAbune.classList.remove( 'active' );
-    populyarLineContainerEl.classList.remove('active')
+    populyarLineContainerEl.classList.remove( 'active' );
 } );
 
-istekBtn.addEventListener( 'click', () => {
+istekBtn.addEventListener( 'click', ( e ) => {
+    e.preventDefault();
     populyarLineContainerEl.classList.add( 'active' );
     kabinetQebz.classList.remove( 'active' );
     kabinetEmail.classList.remove( 'active' );

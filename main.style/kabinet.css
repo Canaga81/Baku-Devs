@@ -939,6 +939,7 @@ header .logo a img {
 
 .kabinet-right .kabinet-qebz.active .qebz-container {
     max-width: 78rem;
+    min-width: 51rem;
     /* min-width: 45rem; */
     min-height: 35.7rem;
     padding: 1.5rem;
@@ -989,7 +990,7 @@ header .logo a img {
 }
 
 .kabinet-right .kabinet-qebz.active .qebz-container .qebz-body .qebz-line:hover {
-    background-color: var(--facebook-color);
+    background-color: #000;
     padding: 1.5rem;
     border-radius: 10px;
 }
