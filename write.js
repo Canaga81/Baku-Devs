@@ -3,7 +3,7 @@ const speedEl = document.getElementById( 'speed' );
 
 const text = `Nə üçün tədrisinizi məhz bizdə keçməlisiniz? Bunun üçün ən azı dörd səbəb var:`;
 let idx = 1;
-let speed = 30;
+let speed = 60;
 
 writeText();
 
